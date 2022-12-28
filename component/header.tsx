@@ -58,13 +58,13 @@ const Text3 = styled.button`
 `;
 const NewRootRootRootRoot = styled.div`
   gap: 0px;
-  margin:auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0);
-  width:fit-content;
+  width:100%;
+  
 `;
 const Container = styled.div`
   width: 1440px;

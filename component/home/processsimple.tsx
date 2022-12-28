@@ -39,12 +39,12 @@ const NewRootRootRootRoot = styled.div`
   background-color: rgba(0, 0, 0, 0);
 `;
 const Background = styled.div`
-  width: 1232px;
+  width: 1340px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 120px 104px;
+  padding: 120px 14px;
   background-size: cover;
   background-image: url("https://file.rendit.io/n/3iGZYOzkUjpxOkjtDjZL.png");
 `;
@@ -53,6 +53,10 @@ const Illustration = styled.div`
   height: 480px;
   border-radius: 8px;
   background-color: #ebebeb;
+//   margin-right:0px;
+position:relative;
+left:100px
+
 `;
 const FlexColumn = styled.div`
   height: 480px;

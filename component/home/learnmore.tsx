@@ -31,7 +31,7 @@ const Learn= ()=>{
         </Group10>
       </NewGroup3>
       <IconPlaceholder2
-        // src={`https://file.rendit.io/n/9GXiNiatoAlid9X61UMQ.svg`}
+        src={`https://file.rendit.io/n/9GXiNiatoAlid9X61UMQ.svg`}
       />
       <NewGroup3>
         <Group9>
@@ -60,8 +60,8 @@ const Learn= ()=>{
         <Group10>
           <Text2 onClick={(e) => Text2Function()}>Learn More</Text2>
           <ArrowChevronRight2
-            // src={`https://file.rendit.io/n/4Y62m9iPZ48gltaG1Ue6.svg`}
-            onClick={(e) => ArrowChevronRight2Function()}
+        // src={`https://file.rendit.io/n/9GXiNiatoAlid9X61UMQ.svg`}
+        onClick={(e) => ArrowChevronRight2Function()}
           />
         </Group10>
       </NewGroup3>
