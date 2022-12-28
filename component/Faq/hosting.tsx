@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Hosting = ({}) => {
   return (
-    <AccordionRootRootRoot>
+    <AccordionRootRootRoot style={{marginTop:"100px"}}>
       <NewGroup>
         <Accordion>
           <Paragraph>How long is the active period of a domain?</Paragraph>

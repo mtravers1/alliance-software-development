@@ -6,7 +6,7 @@ export const Security = ({}) => {
     alert(`was clicked`);
   };
   return (
-    <ValueRootRootRoot>
+    <ValueRootRootRoot style={{marginTop:"100px", marginBottom:"100px"}}>
       <NewGroup>
         <Text1>The Best Speed & Security Hosting</Text1>
         <Paragraph>

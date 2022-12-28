@@ -14,7 +14,7 @@ const Faq = ()=>{
         <div style={{display:"flex", justifyContent:"center", alignItems:"center", flexDirection:"column"}}>
             <Header/>
             <div>
-            <HeroRootRootRoot>
+            <HeroRootRootRoot style={{marginTop:"100px", marginBottom:"100px"}}>
       <NewGroup>
         <Text1>How can we Help?</Text1>
         <Paragraph>
@@ -33,8 +33,8 @@ const Faq = ()=>{
                 <Questions/>
             </div>
             <div>
-            <TabsRootRootRootl>
-      <NewGroupl>
+            <TabsRootRootRootl style={{marginTop:"100px"}}>
+      <NewGroupl style={{marginTop:"50px"}}>
         <Text1l>Hosting</Text1l>
         <Activelabell />
       </NewGroupl>
@@ -46,7 +46,7 @@ const Faq = ()=>{
 
             </div>
             <Hosting/>
-            <div>
+            <div style={{marginTop:"100px"}}>
             <BackgroundRootRootRootc>
       <Paragraphc>
         If you have more questions <br />

@@ -6,7 +6,7 @@ export const Questions = ({}) => {
     alert(` `);
   };
   return (
-    <BackgroundRootRootRoot>
+    <BackgroundRootRootRoot >
       <NewGroup>
         <Text1>Frequently Asked Question</Text1>
         <Paragraph>

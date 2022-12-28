@@ -16,7 +16,7 @@ const Aboutus = ()=>{
         <div style={{display:"flex", justifyContent:"center", alignItems:"center", flexDirection:"column"}}>
         <Header/>
         <div>
-            <HeroRootRootRoot>
+            <HeroRootRootRoot style={{marginTop:"100px", marginBottom:"100px"}}>
       <NewGroup>
         <Text1>About Alliance Software & Development</Text1>
         <Paragraph>
@@ -37,7 +37,7 @@ const Aboutus = ()=>{
         </div>
         <Story/>
         <div>
-        <BackgroundRootRootRoota>
+        <BackgroundRootRootRoota style={{marginTop:"100px", marginBottom:"100px"}}>
       <NewGroupa>
         <Text1a>2k</Text1a>
         <Text2a>Web Installed</Text2a>
@@ -58,7 +58,7 @@ const Aboutus = ()=>{
         </div>
         <Reviews/>
         <div>
-        <WorldDataRootRootRoot>
+        <WorldDataRootRootRoot style={{marginTop:"100px", marginBottom:"100px"}}>
       <Text1b>Hostingan Cover Around the World</Text1b>
       <Paragraphb>
         Enter your select domain name and choose any extension name in the next
@@ -141,7 +141,7 @@ const Text2a = styled.div`
   white-space: nowrap;
 `;
 const BackgroundRootRootRoota = styled.div`
-  width: 1054px;
+  width: 1154px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;

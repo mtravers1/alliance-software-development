@@ -18,7 +18,7 @@ const Finddomain = ()=>{
         <div >
             <Header/>
             
-            <BackgroundRootRootRootRoot>
+            <BackgroundRootRootRootRoot style={{marginTop:"100px"}}>
       <NewGroup>
         <Text1>Find the perfect domain name</Text1>
         <Paragraph>
@@ -44,7 +44,7 @@ const Finddomain = ()=>{
     </div>
     <Findname/>
     <div>
-    <NewRootRootRootRootname>
+    <NewRootRootRootRootname style={{marginTop:"100px"}}>
       <Backgroundname>
         <Illustrationname />
         <FlexColumnname>

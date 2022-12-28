@@ -6,7 +6,7 @@ export const Getstarted = ({}) => {
     alert(`was clicked`);
   };
   return (
-    <NewRootRootRootRoot style={{width:"fit-content"}}>
+    <NewRootRootRootRoot style={{width:"fit-content", margin:"50px"}}>
       <Background>
         <Paragraph>Let’s start something magical with Alliance!</Paragraph>
         <Button1 onClick={(e) => Button1Function()}>

@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Findname = ({}) => {
   return (
-    <StepRootRootRoot>
+    <StepRootRootRoot style={{marginTop:"100px"}}>
       <Text1>How to Find the Ideal Name for a Domain</Text1>
       <Paragraph>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,

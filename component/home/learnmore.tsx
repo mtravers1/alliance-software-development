@@ -11,7 +11,7 @@ const Learn= ()=>{
         alert(``);
       };
     return(
-<ValueRootRootRoot>
+<ValueRootRootRoot style={{paddingTop:"50px"}}>
       <IconPlaceholder2
         src={`https://file.rendit.io/n/9GXiNiatoAlid9X61UMQ.svg`}
       />

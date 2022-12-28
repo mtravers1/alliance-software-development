@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Reviews = ({}) => {
   return (
-    <ReviewsRootRootRoot>
+    <ReviewsRootRootRoot style={{marginTop:"100px", marginBottom:"100px"}}>
       <Text1>Customer Reviews</Text1>
       <NewGroup>
         <Paragraph>

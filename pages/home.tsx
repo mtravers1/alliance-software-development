@@ -20,10 +20,10 @@ const Home = ()=>{
         <div>
             <Header/>
             <div style={{ width:"fit-content", display:"flex", flexDirection:"column", alignItems:"center"}}>
-            <Top/>
+            <Top />
             <Learn/>
             <div style={{marginTop:"100px"}}>
-            <BackgroundRootRootRootRoot>
+            <BackgroundRootRootRootRoot style={{marginTop:"50px"}}>
       <NewGroup>
         <Text1>Find the perfect domain name</Text1>
         <Paragraph>
@@ -48,7 +48,7 @@ const Home = ()=>{
     </BackgroundRootRootRootRoot>
     </div>
     <Howitworks/>
-    <ValueRootRootRootdir>
+    <ValueRootRootRootdir style={{marginTop:"100px"}}>
       <NewGroupdir>
         <Group2dir>
           <Text1dir>

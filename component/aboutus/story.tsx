@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Story = ({}) => {
   return (
-    <StoryRootRootRoot>
+    <StoryRootRootRoot style={{marginTop:"100px", marginBottom:"100px"}}>
       <Text1>Story of ASD</Text1>
       <Paragraph>
         This is our story and how we became the go to for sites and software

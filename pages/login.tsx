@@ -43,7 +43,7 @@ const LogIn= ({}) => {
 export default LogIn;
 
 const LogInScreenRootRootRoot = styled.div`
-  width: 1196px;
+//   width: 1196px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -177,6 +177,7 @@ const SwitchBase = styled.div`
 const Ellipse = styled.img`
   width: 13.5px;
   height: 13.5px;
+  
 `;
 const RememberMe = styled.div`
   width: 79.5px;
@@ -259,4 +260,5 @@ const Text10 = styled.div`
 const Image1 = styled.img`
   width: 720px;
   height: 822px;
+  margin-left:200px;
 `;

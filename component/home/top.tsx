@@ -6,7 +6,7 @@ export const Top = ({}) => {
     alert(` was clicked`);
   };
   return (
-    <HeroRootRootRoot>
+    <HeroRootRootRoot style={{paddingTop:"50px"}}>
       <NewGroup>
         <Group2>
           <Paragraph>

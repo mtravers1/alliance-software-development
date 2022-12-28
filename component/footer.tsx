@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Footer = ({}) => {
   return (
-    <BackgroundRootRootRoot>
+    <BackgroundRootRootRoot style={{marginTop:"100px"}}>
       <Image1 src={`https://file.rendit.io/n/GIF32LejnQa5LtJZD6yt.png`} />
       <NewGroup>
         <Text1>Service</Text1>

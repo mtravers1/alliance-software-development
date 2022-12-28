@@ -6,7 +6,7 @@ export const Howitworks = ({}) => {
     alert(` was clicked`);
   };
   return (
-    <BackgroundRootRootRoot>
+    <BackgroundRootRootRoot style={{marginTop:"50px"}}>
       <Container>
         <HowItWorks>How it Works </HowItWorks>
         <Paragraph>
@@ -95,14 +95,14 @@ const Text4 = styled.div`
 const BackgroundRootRootRoot = styled.div`
 width:fit-content;
 // width:100%;
-position:relative;
-left:-40px;
+// position:relative;
+// left:-40px;
   gap: 0px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding:100px;
+  padding:150px;
   background-color: #f7fafe;
 `;
 const Container = styled.div`
