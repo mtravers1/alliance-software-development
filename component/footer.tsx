@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Link from "next/link";
 
 export const Footer = ({}) => {
   return (
@@ -7,17 +8,17 @@ export const Footer = ({}) => {
       <Image1 src={`https://file.rendit.io/n/GIF32LejnQa5LtJZD6yt.png`} />
       <NewGroup>
         <Text1>Service</Text1>
-        <Text2>Domain</Text2>
+        <Link href="./finddomain"><Text2>Domain</Text2></Link>
       </NewGroup>
       <Text3>Hosting</Text3>
       <NewGroup1>
         <Text4>Company</Text4>
-        <Text5>About</Text5>
+        <Link href="./aboutus"><Text5>About</Text5></Link>
         <Text6>Contact Us</Text6>
       </NewGroup1>
       <NewGroup2>
         <Text4>Help</Text4>
-        <Text5>FAQ</Text5>
+        <Link href="./faq"><Text5>FAQ</Text5></Link>
         <Text6>Help support</Text6>
       </NewGroup2>
     </BackgroundRootRootRoot>

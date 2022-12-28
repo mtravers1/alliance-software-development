@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Link from "next/link";
 
 const Signup = ({}) => {
   const ButtonBaseFunction = () => {
@@ -35,7 +36,7 @@ const Signup = ({}) => {
         </ButtonBase>
         <Text8>
           Already have an account?<Text9> </Text9>
-          <Text10>Sign in</Text10>
+          <Text10><Link href="./login">Sign in</Link></Text10>
         </Text8>
       </WhiteFlexColumn>
     </InputsRootRootRoot>
@@ -59,7 +60,7 @@ const Image1 = styled.img`
   position: relative;
 `;
 const WhiteFlexColumn = styled.div`
-  height: 438px;
+//   height: 438px;
   left: 484px;
   top: 203px;
   position: absolute;

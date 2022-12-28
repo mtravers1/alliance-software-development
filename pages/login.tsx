@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import Link from "next/link";
 const LogIn= ({}) => {
   const ButtonBaseFunction = () => {
     alert(` was clicked`);
@@ -26,13 +26,13 @@ const LogIn= ({}) => {
           </SwitchBase>
           <RememberMe>Remember me </RememberMe>
         </Group2>
-        <ButtonBase onClick={() => ButtonBaseFunction()}>
-          <Text1>SIGN IN</Text1>
+        <ButtonBase >
+          <Text1><Link href="./">SIGN IN</Link></Text1>
           <Content />
         </ButtonBase>
         <Text8>
           Don't have an account?<Text9> </Text9>
-          <Text10>Sign up</Text10>
+         <Text10> <Link href="./signup">Sign up</Link></Text10>
         </Text8>
       </NewGroup>
       <Image1 src={`https://file.rendit.io/n/WHnDR97mZU4e7WHxc8AE.png`} />
@@ -249,7 +249,7 @@ const Text9 = styled.div`
   line-height: 19.60000100135801px;
   white-space: pre-wrap;
 `;
-const Text10 = styled.div`
+const Text10 = styled.button`
   display: contents;
   color: #ffba00;
   font-size: 14px;

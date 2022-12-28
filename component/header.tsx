@@ -1,5 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
+import Link from "next/link";
 export const Header = ({}) => {
   const Button1Function = () => {
     alert(`was clicked`);
@@ -23,8 +24,8 @@ export const Header = ({}) => {
         <Text3>Email</Text3>
         <Text3>Website Builder</Text3>
         <Text5>Pricing</Text5>
-        <Button1 onClick={() => Button1Function()}>
-          <ActiveButton>Login</ActiveButton>
+        <Button1 >
+          <Link href="./login"><ActiveButton>Login</ActiveButton></Link>
         </Button1>
       </Container>
     </NewRootRootRootRoot>
