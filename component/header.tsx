@@ -57,13 +57,15 @@ const Text3 = styled.button`
   white-space: nowrap;
 `;
 const NewRootRootRootRoot = styled.div`
+    
   gap: 0px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+//   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0);
-  width:100%;
+  align-items:center;
+
   
 `;
 const Container = styled.div`

@@ -46,7 +46,7 @@ const Signup = ({}) => {
 export default Signup;
 
 const InputsRootRootRoot = styled.div`
-  width: 1412px;
+  width: 100%;
   position: relative;
   gap: 0px;
   display: flex;
@@ -55,13 +55,13 @@ const InputsRootRootRoot = styled.div`
   align-items: center;
 `;
 const Image1 = styled.img`
-  width: 1412px;
+  width: 100%;
   height: 450px;
   position: relative;
 `;
 const WhiteFlexColumn = styled.div`
 //   height: 438px;
-  left: 484px;
+  left: 584px;
   top: 203px;
   position: absolute;
   display: flex;

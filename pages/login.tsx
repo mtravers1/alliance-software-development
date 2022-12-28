@@ -8,6 +8,7 @@ const LogIn= ({}) => {
   return (
     <LogInScreenRootRootRoot>
       <NewGroup>
+       
         <Text2>Welcome Back</Text2>
         <Text3>Enter your email and password to sign in</Text3>
         <Text4>Email</Text4>
@@ -34,7 +35,9 @@ const LogIn= ({}) => {
           Don't have an account?<Text9> </Text9>
          <Text10> <Link href="./signup">Sign up</Link></Text10>
         </Text8>
+        
       </NewGroup>
+      
       <Image1 src={`https://file.rendit.io/n/WHnDR97mZU4e7WHxc8AE.png`} />
     </LogInScreenRootRootRoot>
   );
@@ -48,9 +51,13 @@ const LogInScreenRootRootRoot = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 0px 202px 244px;
+//   padding: 0px 0px 202px 244px;
   background-color: #ffffff;
   overflow: hidden;
+  position: relative;
+  
+;
+}
 `;
 const NewGroup = styled.div`
   height: 445px;
@@ -60,6 +67,7 @@ const NewGroup = styled.div`
   align-self: flex-start;
   align-items: flex-start;
   margin: 188px 0px 0px 0px;
+  
 `;
 const Text2 = styled.div`
   width: 226px;
@@ -258,7 +266,7 @@ const Text10 = styled.button`
   line-height: 19.60000100135801px;
 `;
 const Image1 = styled.img`
-  width: 720px;
+  width: 750px;
   height: 822px;
   margin-left:200px;
 `;
