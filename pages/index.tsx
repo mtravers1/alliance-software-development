@@ -32,7 +32,7 @@ import styles from '../styles/Home.module.css'
         <link href="https://fonts.googleapis.com/css2?family=Inter&family=Sen&display=swap" rel="stylesheet"></link>
       </Head>
       <Header/>
-                  <div style={{ width:"fit-content", display:"flex", flexDirection:"column", alignItems:"center"}}>
+                  <div style={{ width:"max-content", display:"flex", flexDirection:"column", alignItems:"center"}}>
                   <Top />
                   <Learn/>
                   <div style={{marginTop:"100px"}}>

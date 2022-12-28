@@ -8,7 +8,7 @@ export const Header = ({}) => {
   return (
     <NewRootRootRootRoot>
       <Container>
-        <Image1 src={`https://file.rendit.io/n/LWKypLKsROHg9A8UFfGE.png`} />
+        <Link href="./"><Image1 src={`https://file.rendit.io/n/LWKypLKsROHg9A8UFfGE.png`} /></Link>
         <Text1>
             <option>Hosting
                 </option></Text1>
