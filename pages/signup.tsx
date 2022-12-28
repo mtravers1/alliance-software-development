@@ -55,13 +55,13 @@ const InputsRootRootRoot = styled.div`
   align-items: center;
 `;
 const Image1 = styled.img`
-  width: 100%;
+  
   height: 450px;
   position: relative;
 `;
 const WhiteFlexColumn = styled.div`
 //   height: 438px;
-  left: 584px;
+  left: 484px;
   top: 203px;
   position: absolute;
   display: flex;

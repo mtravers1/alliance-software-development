@@ -120,6 +120,9 @@ const Container1 = styled.div`
   padding: 0px 24px;
   border-radius: 16px;
   background-color: #ffffff;
+  &: hover {
+    box-shadow: 0px 48px 120px 0px rgba(51, 51, 51, 0.25);
+  } ;
 `;
 const ReviewsRootRootRoot = styled.div`
   height: 560px;
@@ -158,6 +161,7 @@ const Group8 = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  
 `;
 const Container2 = styled.div`
   height: 256px;
@@ -169,5 +173,8 @@ const Container2 = styled.div`
   padding: 0px 24px;
   border-radius: 16px;
   background-color: #ffffff;
-  box-shadow: 0px 48px 120px 0px rgba(51, 51, 51, 0.25);
+  
+  &: hover {
+    box-shadow: 0px 48px 120px 0px rgba(51, 51, 51, 0.25);
+  } ;
 `;
