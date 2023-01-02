@@ -1,7 +1,7 @@
 
-import React from "react"
+import React, { useEffect } from "react"
 import styled from "styled-components"
-
+import { useState } from "react";
 
 const Learn= ()=>{
     const Text2Function = () => {
@@ -10,61 +10,116 @@ const Learn= ()=>{
       const ArrowChevronRight2Function = () => {
         alert(``);
       };
+
+      const [uniquefeatures, setUniquefeatures]= useState([
+        {id:1, img:"", title:"New Unique Features", descriptions:"Lorem ipsum dolor sit amet, consecte tur adipiscing elit ut aliquam.", foot:"learn more" }
+     ])
+
+     const [domainhosting, setDomainhosting]= useState([
+        {id:1, img:"", title:"Domain Hosting", descriptions:"Lorem ipsum dolor sit amet, consecte tur adipiscing elit ut aliquam.", foot:"learn more" }
+     ])
+
+     const [intergration, setIntergration]= useState([
+        {id:1, img:"", title:"Intergration", descriptions:"Lorem ipsum dolor sit amet, consecte tur adipiscing elit ut aliquam.", foot:"learn more" }
+     ])
+
+
+     useEffect(()=>{
+      fetch('http://localhost:8000/uniquefeatures')
+      .then(res=>{
+        return res.json()
+      })
+      .then(data=>{
+        setUniquefeatures(data)
+      })
+     },[])
+     useEffect(()=>{
+      fetch('http://localhost:8000/domainhosting')
+      .then(res=>{
+        return res.json()
+      })
+      .then(data=>{
+        setDomainhosting(data)
+      })
+     },[])
+     useEffect(()=>{
+      fetch('http://localhost:8000/intergration')
+      .then(res=>{
+        return res.json()
+      })
+      .then(data=>{
+        setIntergration(data)
+      })
+     },[])
     return(
 <ValueRootRootRoot style={{paddingTop:"50px"}}>
-      <IconPlaceholder2
+
+    {uniquefeatures.map((unique,index)=>(
+        <>
+            <IconPlaceholder2
+            src={`https://file.rendit.io/n/9GXiNiatoAlid9X61UMQ.svg`}
+            key={index} />
+            <NewGroup3>
+                <Group9>
+                    <Text1>{unique.title}</Text1>
+                    <Paragraph>
+                        {unique.descriptions}
+                    </Paragraph>
+                </Group9>
+                <Group10>
+                    <Text2 onClick={() => Text2Function()}>{unique.foot}</Text2>
+                    <ArrowChevronRight2
+                        // src={`https://file.rendit.io/n/4Y62m9iPZ48gltaG1Ue6.svg`}
+                        onClick={() => ArrowChevronRight2Function()} />
+                </Group10>
+            </NewGroup3>
+        </>
+
+    ))}
+      {domainhosting.map((domain, index)=>(
+           
+           <><IconPlaceholder2
+            src={`https://file.rendit.io/n/9GXiNiatoAlid9X61UMQ.svg`}
+          key={domain.id}/>
+          <NewGroup3>
+            <Group9>
+              <Text1>{domain.title}</Text1>
+              <Paragraph>
+                {domain.descriptions}
+              </Paragraph>
+            </Group9>
+            <Group10>
+              <Text2 onClick={(e) => Text2Function()}>{domain.foot}</Text2>
+              <ArrowChevronRight2
+                onClick={(e) => ArrowChevronRight2Function()}
+              />
+            </Group10>
+          </NewGroup3>
+          </>
+      ))}
+      {intergration.map((inter, index)=>(
+        <>
+        <IconPlaceholder2
         src={`https://file.rendit.io/n/9GXiNiatoAlid9X61UMQ.svg`}
-      />
+      key={inter.id}/>
       <NewGroup3>
         <Group9>
-          <Text1>New Unique Features</Text1>
+          <Text1>{inter.title}</Text1>
           <Paragraph>
-            Lorem ipsum dolor sit amet, consecte tur adipiscing elit ut aliquam.
-          </Paragraph>
+            {inter.descriptions}
+       </Paragraph>
         </Group9>
         <Group10>
-          <Text2 onClick={() => Text2Function()}>Learn More</Text2>
-          <ArrowChevronRight2
-            // src={`https://file.rendit.io/n/4Y62m9iPZ48gltaG1Ue6.svg`}
-            onClick={() => ArrowChevronRight2Function()}
-          />
-        </Group10>
-      </NewGroup3>
-      <IconPlaceholder2
-        src={`https://file.rendit.io/n/9GXiNiatoAlid9X61UMQ.svg`}
-      />
-      <NewGroup3>
-        <Group9>
-          <Text1>Domain Hosting</Text1>
-          <Paragraph>
-            Lorem ipsum dolor sit amet, consecte tur adipiscing elit ut aliquam.
-          </Paragraph>
-        </Group9>
-        <Group10>
-          <Text2 onClick={(e) => Text2Function()}>Learn More</Text2>
-          <ArrowChevronRight2
-            onClick={(e) => ArrowChevronRight2Function()}
-          />
-        </Group10>
-      </NewGroup3>
-      <IconPlaceholder2
-        src={`https://file.rendit.io/n/9GXiNiatoAlid9X61UMQ.svg`}
-      />
-      <NewGroup3>
-        <Group9>
-          <Text1>Intergration</Text1>
-          <Paragraph>
-            Lorem ipsum dolor sit amet, consecte tur adipiscing elit ut aliquam.
-          </Paragraph>
-        </Group9>
-        <Group10>
-          <Text2 onClick={(e) => Text2Function()}>Learn More</Text2>
+          <Text2 onClick={(e) => Text2Function()}>{inter.foot}</Text2>
           <ArrowChevronRight2
         // src={`https://file.rendit.io/n/9GXiNiatoAlid9X61UMQ.svg`}
         onClick={(e) => ArrowChevronRight2Function()}
           />
         </Group10>
       </NewGroup3>
+        </>
+      ))}
+      
     </ValueRootRootRoot>
     )
 }

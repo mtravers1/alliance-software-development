@@ -1,28 +1,56 @@
 import React from "react";
 import styled from "styled-components";
+import { useState } from "react";
+import { AnyAaaaRecord } from "dns";
+import { useEffect } from "react";
+interface process{
+    title:string
+    description:string
+    button:string
+}
+
 
 export const Simpleprocess= ({}) => {
   const Button1Function = () => {
     alert(` was clicked`);
+
+    const [process, setProcess]=useState(
+        {id:1,
+        title:"We Make this process simple", 
+        description:"Having a website should’nt be a hassle. We make it as simple as possible by doing all of the work for you. Once you choose us, we will walk you the entire process step by step and tailor your site to your every needs! Find out for yourself by clicking the link belw to get started!" , 
+        button:"Get Started"}
+        )
+
+        useEffect(()=>{
+          fetch('localhost:3000/simple')
+          .then(res=>{
+            return res.json()
+          })
+          .then(data=>{
+            setProcess(data)
+          })
+        },[])
+        
   };
   return (
     <NewRootRootRootRoot>
       <Background>
         <Illustration />
         <FlexColumn>
-          <FlexColumn1>
-            <Text1>We Make this process simple</Text1>
+            {Object.keys(process).map((pro:any)=>(
+                <>
+                <FlexColumn1 key={pro.id}>
+            <Text1>{pro.title}</Text1>
             <Paragraph>
-              Having a website should’nt be a hassle. We make it as simple as
-              possible by doing all of the work for you. Once you choose us, we
-              will walk you the entire process step by step and tailor your site
-              to your every needs! Find out for yourself by clicking the link
-              belw to get started!{" "}
+              {pro.description}
             </Paragraph>
           </FlexColumn1>
           <Button1 onClick={() => Button1Function()}>
-            <ActiveButton>Get Started</ActiveButton>
+            <ActiveButton>{pro.button}</ActiveButton>
           </Button1>
+                </>
+            ))}
+          
         </FlexColumn>
       </Background>
     </NewRootRootRootRoot>

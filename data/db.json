@@ -1,0 +1,95 @@
+{
+    "header":[
+        {
+            "id":1,
+            "headertitle":" It’s time to bring your concept to reality with ASD",
+            "headersub":"Anything you can imagine can be built for you by our world class team",
+            "headerbutton":"Get Started Today!",
+            "headerimg":""
+
+        }
+    ],
+    "uniquefeatures":[
+        {
+        "id":1, 
+        "img":"", 
+        "title":"New Unique Features", 
+        "descriptions":"Lorem ipsum dolor sit amet, consecte tur adipiscing elit ut aliquam.", 
+        "foot":"learn more" 
+    }
+
+    ],
+    "domainhosting":[
+        {"id":1, 
+        "img":"", 
+        "title":"Domain Hosting", 
+        "descriptions":"Lorem ipsum dolor sit amet, consecte tur adipiscing elit ut aliquam.", 
+        "foot":"learn more" }
+
+    ],
+    "intergration":[
+        {"id":1, 
+        "img":"", 
+        "title":"Intergration", 
+        "descriptions":"Lorem ipsum dolor sit amet, consecte tur adipiscing elit ut aliquam.", 
+        "foot":"learn more" 
+    }
+
+    ],
+    "perfectdomain":[
+              {"id":1, 
+              "title":"Find the perfect domain name", 
+              "description":"", 
+              "search":"", 
+              "img":""}
+    ],
+    "directory":[
+        {
+        "title":"View our Full App Directory", 
+        "description":"Our suite includes many full scale appliations and software for hundreds of different uses and benifits. Click the link to view our full directory and see how Alliance Software & Development can help",
+        "button":"learn more"
+      }
+    ],
+    "getstarted":[
+        {"title":"Let’s start something magical with Alliance!", 
+        "button":"Get started"}
+      ],
+      "foot":[
+        {"img":"", 
+        "title":"Service", 
+        "option1":"Domain", "title2":"Hosting", "title3":"Company", "option2":"About", "option3":"Contact Us",
+        "title4":"Help", "option4":"FAQ", "option5":"Help support"}
+      ],
+      "simple":[
+        {"title":"We Make this process simple",
+        "description":"Having a website should’nt be a hassle. We make it as simple as possible by doing all of the work for you. Once you choose us, we will walk you the entire process step by step and tailor your site to your every needs! Find out for yourself by clicking the link belw to get started!" , 
+        "button":"Get Started"
+
+    }
+      ],
+      "howitworks":[
+        {"id":1,
+        "title":"How it works", 
+        "description":"", 
+        "pricing":"Pricing", 
+        "title1":"Custom Site Design and Hosting",
+        "desciption1":"This includes you site design and hosting services:", 
+        "rate":"$1000 @ $ 89.99/mo", 
+        "select":"Select", 
+        "option1":"1 Website", 
+        "option2":"Continious Updates", 
+        "option3":"1 Domain Name", 
+        "option4":"Feature", 
+        "option5":"1 Email account", 
+        "option6":"Feature"}
+     
+      ]
+
+}
+
+ 
+
+
+
+
+

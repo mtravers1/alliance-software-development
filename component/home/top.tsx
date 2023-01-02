@@ -1,27 +1,77 @@
 import React from "react";
 import styled from "styled-components";
+import { useState,useEffect } from "react";
+import { ReactNode } from "react";
+interface header{
 
+    id:number
+    headertitle:string
+    subheader:string
+    headerbutton:string
+    headerimg:string
+}
 export const Top = ({}) => {
   const Button1Function = () => {
     alert(` was clicked`);
   };
+
+  const [header,setHeader]=useState(   [{
+    id:1,
+    headertitle:" It’s time to bring your concept to reality with ASD",
+    headersub:"Anything you can imagine can be built for you by our world class team",
+    headerbutton:"Get Started Today!",
+    headerimg:""
+
+}])
+
+
+// const [header, setHeader]=useState(null)
+
+
+
+
+
+
+              useEffect(()=>{
+              fetch('http://localhost:3000/header')
+              .then(res=>{
+                return res.json()
+              }).then(data =>{
+                console.log(data)
+                setHeader(data)
+              })
+            }, []);
+            // fetch('localhost:3000/uniquefeatures',{
+            //   method:'Get',
+            //   headers:{"Content-Type":"application/json"},
+            //   body:JSON.stringify(data)
+
+            // }).then(()=>{
+            //   console.log('newdata')
+            // })
   return (
-    <HeroRootRootRoot style={{paddingTop:"50px"}}>
+
+    <HeroRootRootRoot >
       <NewGroup>
-        <Group2>
-          <Paragraph>
-            It’s time to bring <br />
-            your concept to <br />
-            reality with ASD
-          </Paragraph>
-          <Paragraph1>
-            Anything you can imagine can be built for you by our world class
-            team
-          </Paragraph1>
-        </Group2>
-        <Button1 onClick={() => Button1Function()}>
-          <ActiveButton>Get Started Today!</ActiveButton>
-        </Button1>
+       
+         
+        {header.map((head: {
+            [x: string]: ReactNode;
+            headertitle: ReactNode; id: React.Key | null | undefined; 
+}) =>(
+            <><Group2 key={head.id}>
+                <Paragraph >
+                  {head.headertitle}
+                </Paragraph>
+                <Paragraph1>
+                    {head.headersub}
+                </Paragraph1>
+            </Group2><Button1 onClick={() => Button1Function()}>
+                    <ActiveButton>{head.headerbutton}</ActiveButton>
+                </Button1></> 
+      
+        ))}
+        
       </NewGroup>
       <Illustration />
     </HeroRootRootRoot>
@@ -29,6 +79,7 @@ export const Top = ({}) => {
 };
 
 const HeroRootRootRoot = styled.div`
+style={{paddingTop:"50px"}}
   width: 1232px;
   display: flex;
   flex-direction: row;
@@ -45,7 +96,7 @@ const NewGroup = styled.div`
   justify-content: center;
   align-items: center;
 `;
-const Group2 = styled.div`
+const Group2:any = styled.div`
   gap: 24px;
   display: flex;
   flex-direction: column;

@@ -1,14 +1,96 @@
 import React from "react";
 import styled from "styled-components";
+import { useState } from "react";
+import { useEffect } from "react";
 
 export const Howitworks = ({}) => {
   const Button1Function = () => {
     alert(` was clicked`);
   };
+
+  const [howitwork, setHowitwork]=useState([
+    {id:1, title:"How it works", description:"", pricing:"Pricing", title1:"Custom Site Design and Hosting",
+     desciption1:"This includes you site design and hosting services:", 
+     rate:"$1000 @ $ 89.99/mo", select:"Select", option1:"1 Website", option2:"Continious Updates", option3:"1 Domain Name", option4:"Feature", option5:"1 Email account", option6:"Feature"}
+  ])
+  useEffect(()=>{
+    fetch('http://localhost:8000/howitworks')
+    .then(res=>{
+      return res.json()
+    })
+    .then(data=>{
+      setHowitwork(data)
+    })
+   },[])
+                     
   return (
     <BackgroundRootRootRoot style={{marginTop:"50px"}}>
       <Container>
-        <HowItWorks>How it Works </HowItWorks>
+        {howitwork.map(how=>(
+            <>
+             <HowItWorks>{how.title}</HowItWorks>
+        <Paragraph>
+          {how.description}
+        </Paragraph>
+        <Container1>
+          <Text1>{how.pricing}</Text1>
+        </Container1>
+        <Text2>{how.title1}</Text2>
+        <FlexColumn>
+          <Text3>{how.rate}</Text3>
+          <Paragraph1>
+            {how.desciption1}
+          </Paragraph1>
+        </FlexColumn>
+        <Button1 onClick={() => Button1Function()}>
+          <ActiveButton>{how.select}</ActiveButton>
+        </Button1>
+        <FlexRow>
+          <FlexRow1>
+            <Checkmark
+              src={`https://file.rendit.io/n/cMg6teKqMuozqvxy8480.svg`}
+            />
+            <Text4>{how.option1}</Text4>
+          </FlexRow1>
+          <FlexRow1>
+            <Checkmark
+              src={`https://file.rendit.io/n/cMg6teKqMuozqvxy8480.svg`}
+            />
+            <Text4>{how.option2}</Text4>
+          </FlexRow1>
+        </FlexRow>
+        <FlexRow3>
+          <FlexRow1>
+            <Checkmark
+              src={`https://file.rendit.io/n/cMg6teKqMuozqvxy8480.svg`}
+            />
+            <Text4>{how.option3}</Text4>
+          </FlexRow1>
+          <FlexRow1>
+            <Checkmark
+              src={`https://file.rendit.io/n/cMg6teKqMuozqvxy8480.svg`}
+            />
+            <Text4>{how.option4}</Text4>
+          </FlexRow1>
+        </FlexRow3>
+        <FlexRow6>
+          <FlexRow1>
+            <Checkmark
+              src={`https://file.rendit.io/n/cMg6teKqMuozqvxy8480.svg`}
+            />
+            <Text4>{how.option5}</Text4>
+          </FlexRow1>
+          <FlexRow1>
+            <Checkmark
+              src={`https://file.rendit.io/n/cMg6teKqMuozqvxy8480.svg`}
+            />
+            <Text4>{how.option5}</Text4>
+          </FlexRow1>
+        </FlexRow6>
+            </>
+        ))}
+
+        {/* <HowItWorks>How it Works </HowItWorks>
         <Paragraph>
           Enter your select domain name and choose any extension name in the
           next step (choose between .com, .online, .tech, .site, .net, and more)
@@ -67,7 +149,7 @@ export const Howitworks = ({}) => {
             />
             <Text4>Feature</Text4>
           </FlexRow1>
-        </FlexRow6>
+        </FlexRow6> */}
       </Container>
     </BackgroundRootRootRoot>
   );

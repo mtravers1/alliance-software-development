@@ -1,27 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Link from "next/link";
 
 const Signup = ({}) => {
-  const ButtonBaseFunction = () => {
-    alert(` clicked`);
-  };
+ 
+
+  const [fullname, setFullname]=useState('')
+  const [email, setEmail]=useState('')
+  const [password, setPassword]=useState('')
+
+  const handleSubmit = (e:any)=>{
+    e.preventDefault()
+    const info ={fullname, email, password}
+    fetch('http://localhost:3000/userdata',{
+        method:'POST',
+        headers:{"Content-Type":"application/json"},
+        body: JSON.stringify(info)
+    } ).then(()=>{
+        console.log(info)
+    })
+  }
   return (
     <InputsRootRootRoot>
       <Image1 src={`https://file.rendit.io/n/CKirmeUIsPDUAlDhlS51.png`} />
       <WhiteFlexColumn>
+      <form onSubmit={handleSubmit}>
+
         <Text2>Name</Text2>
-        <Name1>
-          <Text3>Your full name</Text3>
-        </Name1>
+        <Name1 placeholder="FullName"
+        onChange={(e)=>setFullname(e.target.value)}/>
+          {/* <Text3>Your full name</Text3>
+        </Name1> */}
         <Text4>Email</Text4>
-        <Email1>
-          <Text5>Your email address</Text5>
-        </Email1>
+        <Email1 placeholder="Email"
+        onChange={(e)=>setEmail(e.target.value)}/>
+          {/* <Text5>Your email address</Text5>
+        </Email1> */}
         <Text6>Password</Text6>
-        <Email>
-          <Text7>Your password</Text7>
-        </Email>
+        <Email placeholder="Password"
+        onChange={(e)=>setPassword(e.target.value)}/>
+          {/* <Text7>Your password</Text7>
+        </Email> */}
+        
         <FlexRow>
           <SwitchBase>
             <Ellipse
@@ -30,10 +50,11 @@ const Signup = ({}) => {
           </SwitchBase>
           <RememberMe>Remember me </RememberMe>
         </FlexRow>
-        <ButtonBase onClick={() => ButtonBaseFunction()}>
+        <ButtonBase >
           <Text1>SIGN UP</Text1>
           <Content />
         </ButtonBase>
+        </form>
         <Text8>
           Already have an account?<Text9> </Text9>
           <Text10><Link href="./login">Sign in</Link></Text10>
@@ -83,7 +104,7 @@ const Text2 = styled.div`
   font-family: Helvetica;
   line-height: 19.59999966621399px;
 `;
-const Name1 = styled.div`
+const Name1 = styled.input`
   height: 48.29296875px;
   gap: 0px;
   display: flex;
@@ -117,7 +138,7 @@ const Text4 = styled.div`
   font-family: Helvetica;
   line-height: 19.59999966621399px;
 `;
-const Email1 = styled.div`
+const Email1 = styled.input`
   height: 48.29296875px;
   gap: 0px;
   display: flex;
@@ -151,7 +172,7 @@ const Text6 = styled.div`
   font-family: Helvetica;
   line-height: 19.59999966621399px;
 `;
-const Email = styled.div`
+const Email = styled.input`
   height: 48.29296875px;
   gap: 0px;
   display: flex;

@@ -1,21 +1,41 @@
 import React from "react";
 import styled from "styled-components";
-
+import { useState } from "react";
+import { useEffect } from "react";
 export const Getstarted = ({}) => {
   const Button1Function = () => {
     alert(`was clicked`);
   };
+
+  const [getstarted, setGetstarted]=useState([
+    {title:"Let’s start something magical with Alliance!", 
+    button:"Get started"}
+  ]) 
+
+
+  useEffect(()=>{
+    fetch('localhost:3000/getstarted')
+    .then(res=>{
+      return res.json()
+    })
+    .then(data=>{
+      setGetstarted(data)
+    })
+  },[])
   return (
     <NewRootRootRootRoot style={{width:"fit-content", margin:"50px"}}>
       <Background>
-        <Paragraph>Let’s start something magical with Alliance!</Paragraph>
+        {getstarted.map(get => (
+            <>
+            <Paragraph>{get.title}</Paragraph>
         <Button1 onClick={(e) => Button1Function()}>
           <ActiveButton>
-            Get
-            {"  "}
-            started
+           {get.button}
           </ActiveButton>
         </Button1>
+            </>
+        ))}
+        
       </Background>
     </NewRootRootRootRoot>
   );

@@ -1,26 +1,39 @@
 import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
-
+import {useState} from 'react'
 export const Footer = ({}) => {
+
+
+
+    const [foot, setFoot]=useState([
+        {img:'', title:'Service', option1:'Domain', title2:'Hosting', title3:'Company', option2:'About', option3:'Contact Us',
+        title4:'Help', option4:'FAQ', option5:'Help support'}
+    ])
+    
   return (
     <BackgroundRootRootRoot style={{marginTop:"100px"}}>
-      <Image1 src={`https://file.rendit.io/n/GIF32LejnQa5LtJZD6yt.png`} />
-      <NewGroup>
-        <Text1>Service</Text1>
-        <Link href="./finddomain"><Text2>Domain</Text2></Link>
-      </NewGroup>
-      <Text3>Hosting</Text3>
-      <NewGroup1>
-        <Text4>Company</Text4>
-        <Link href="./aboutus"><Text5>About</Text5></Link>
-        <Text6>Contact Us</Text6>
-      </NewGroup1>
-      <NewGroup2>
-        <Text4>Help</Text4>
-        <Link href="./faq"><Text5>FAQ</Text5></Link>
-        <Text6>Help support</Text6>
-      </NewGroup2>
+        {foot.map(fo=>(
+            <>
+            <Image1 src={`https://file.rendit.io/n/GIF32LejnQa5LtJZD6yt.png`} />
+            <NewGroup>
+              <Text1>{fo.title}</Text1>
+              <Link href="./finddomain"><Text2>{fo.option1}</Text2></Link>
+            </NewGroup>
+            <Text3>{fo.title2}</Text3>
+            <NewGroup1>
+              <Text4>{fo.title3}</Text4>
+              <Link href="./aboutus"><Text5>{fo.option3}</Text5></Link>
+              <Text6>{fo.option3}</Text6>
+            </NewGroup1>
+            <NewGroup2>
+              <Text4>{fo.title4}</Text4>
+              <Link href="./faq"><Text5>{fo.option4}</Text5></Link>
+              <Text6>{fo.option5}</Text6>
+            </NewGroup2>
+            </>
+        ))}
+      
     </BackgroundRootRootRoot>
   );
 };

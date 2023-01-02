@@ -155,6 +155,9 @@ font-size: 24px;
 font-family: Inter;
 line-height: 32px;
 white-space: nowrap;
+&: hover {
+    box-shadow: 0px 48px 120px 0px rgba(51, 51, 51, 0.25);
+  } ;
 `;
 const Activelabell = styled.div`
 width: 80px;
