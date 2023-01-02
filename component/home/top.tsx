@@ -32,15 +32,15 @@ export const Top = ({}) => {
 
 
 
-              useEffect(()=>{
-              fetch('http://localhost:3000/header')
-              .then(res=>{
-                return res.json()
-              }).then(data =>{
-                console.log(data)
-                setHeader(data)
-              })
-            }, []);
+            //   useEffect(()=>{
+            //   fetch('http://localhost:3000/header')
+            //   .then(res=>{
+            //     return res.json()
+            //   }).then(data =>{
+            //     console.log(data)
+            //     setHeader(data)
+            //   })
+            // }, []);
             // fetch('localhost:3000/uniquefeatures',{
             //   method:'Get',
             //   headers:{"Content-Type":"application/json"},

@@ -24,33 +24,33 @@ const Learn= ()=>{
      ])
 
 
-     useEffect(()=>{
-      fetch('http://localhost:8000/uniquefeatures')
-      .then(res=>{
-        return res.json()
-      })
-      .then(data=>{
-        setUniquefeatures(data)
-      })
-     },[])
-     useEffect(()=>{
-      fetch('http://localhost:8000/domainhosting')
-      .then(res=>{
-        return res.json()
-      })
-      .then(data=>{
-        setDomainhosting(data)
-      })
-     },[])
-     useEffect(()=>{
-      fetch('http://localhost:8000/intergration')
-      .then(res=>{
-        return res.json()
-      })
-      .then(data=>{
-        setIntergration(data)
-      })
-     },[])
+    //  useEffect(()=>{
+    //   fetch('http://localhost:8000/uniquefeatures')
+    //   .then(res=>{
+    //     return res.json()
+    //   })
+    //   .then(data=>{
+    //     setUniquefeatures(data)
+    //   })
+    //  },[])
+    //  useEffect(()=>{
+    //   fetch('http://localhost:8000/domainhosting')
+    //   .then(res=>{
+    //     return res.json()
+    //   })
+    //   .then(data=>{
+    //     setDomainhosting(data)
+    //   })
+    //  },[])
+    //  useEffect(()=>{
+    //   fetch('http://localhost:8000/intergration')
+    //   .then(res=>{
+    //     return res.json()
+    //   })
+    //   .then(data=>{
+    //     setIntergration(data)
+    //   })
+    //  },[])
     return(
 <ValueRootRootRoot style={{paddingTop:"50px"}}>
 

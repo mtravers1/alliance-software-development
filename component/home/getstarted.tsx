@@ -13,15 +13,15 @@ export const Getstarted = ({}) => {
   ]) 
 
 
-  useEffect(()=>{
-    fetch('localhost:3000/getstarted')
-    .then(res=>{
-      return res.json()
-    })
-    .then(data=>{
-      setGetstarted(data)
-    })
-  },[])
+  // useEffect(()=>{
+  //   fetch('localhost:3000/getstarted')
+  //   .then(res=>{
+  //     return res.json()
+  //   })
+  //   .then(data=>{
+  //     setGetstarted(data)
+  //   })
+  // },[])
   return (
     <NewRootRootRootRoot style={{width:"fit-content", margin:"50px"}}>
       <Background>

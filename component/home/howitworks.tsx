@@ -13,15 +13,15 @@ export const Howitworks = ({}) => {
      desciption1:"This includes you site design and hosting services:", 
      rate:"$1000 @ $ 89.99/mo", select:"Select", option1:"1 Website", option2:"Continious Updates", option3:"1 Domain Name", option4:"Feature", option5:"1 Email account", option6:"Feature"}
   ])
-  useEffect(()=>{
-    fetch('http://localhost:8000/howitworks')
-    .then(res=>{
-      return res.json()
-    })
-    .then(data=>{
-      setHowitwork(data)
-    })
-   },[])
+  // useEffect(()=>{
+  //   fetch('http://localhost:8000/howitworks')
+  //   .then(res=>{
+  //     return res.json()
+  //   })
+  //   .then(data=>{
+  //     setHowitwork(data)
+  //   })
+  //  },[])
                      
   return (
     <BackgroundRootRootRoot style={{marginTop:"50px"}}>
