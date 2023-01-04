@@ -9,7 +9,15 @@ interface header{
     subheader:string
     headerbutton:string
     headerimg:string
+    map:[{
+      id:number
+      headertitle:string
+      subheader:string
+      headerbutton:string
+      headerimg:string
+    }]
 }
+
 export const Top = ({}) => {
   const Button1Function = () => {
     alert(` was clicked`);
@@ -25,12 +33,35 @@ export const Top = ({}) => {
 }])
 
 
-// const [header, setHeader]=useState(null)
+// const [header, setHeader]=useState([])
 
 
 
+            useEffect(()=>{
+              const fetchdata = async ()=>{
+
+              try{
+            
+                const res= await fetch('http://localhost:3000/header')
+                const data=res.json()
+                console.log(data)
+                setHeader(await data)
+                
+              }
+              catch(err){
+                console.log(err)
+              }
+            }
+
+            (async ()=> await fetchdata())
+
+          },[])
+          console.log(setHeader)
 
 
+
+          
+            
 
             //   useEffect(()=>{
             //   fetch('http://localhost:3000/header')
@@ -38,7 +69,7 @@ export const Top = ({}) => {
             //     return res.json()
             //   }).then(data =>{
             //     console.log(data)
-            //     setHeader(data)
+            //     // setHeader(data)
             //   })
             // }, []);
             // fetch('localhost:3000/uniquefeatures',{
@@ -49,13 +80,15 @@ export const Top = ({}) => {
             // }).then(()=>{
             //   console.log('newdata')
             // })
+            
   return (
+    <>
 
     <HeroRootRootRoot >
       <NewGroup>
        
          
-        {header.map((head: {
+        { header.map((head: {
             [x: string]: ReactNode;
             headertitle: ReactNode; id: React.Key | null | undefined; 
 }) =>(
@@ -70,11 +103,12 @@ export const Top = ({}) => {
                     <ActiveButton>{head.headerbutton}</ActiveButton>
                 </Button1></> 
       
-        ))}
+        )) }
         
       </NewGroup>
       <Illustration />
     </HeroRootRootRoot>
+    </>
   );
 };
 

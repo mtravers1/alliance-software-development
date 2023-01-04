@@ -21,15 +21,21 @@ export const Simpleprocess= ({}) => {
         button:"Get Started"}
         )
 
-        // useEffect(()=>{
-        //   fetch('localhost:3000/simple')
-        //   .then(res=>{
-        //     return res.json()
-        //   })
-        //   .then(data=>{
-        //     setProcess(data)
-        //   })
-        // },[])
+        useEffect(()=>{
+          const fetchdata= async()=>{
+
+          try{
+              let res = await fetch('')
+              let data = await res.json()
+              setProcess(data)
+            }catch(err){
+              console.log(err)
+          }
+          }
+          (async ()=> await fetchdata())
+        }
+
+        )
         
   };
   return (

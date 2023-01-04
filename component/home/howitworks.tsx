@@ -22,6 +22,19 @@ export const Howitworks = ({}) => {
   //     setHowitwork(data)
   //   })
   //  },[])
+
+  useEffect(()=>{
+    const fetchdata = async()=>{
+      try{
+        let res = await fetch('http://localhost:8000/howitworks')
+        let data = await res.json()
+        setHowitwork(data)
+      }catch(err){
+        console.log(err)
+      }
+    }
+    (async ()=>fetchdata())
+  })
                      
   return (
     <BackgroundRootRootRoot style={{marginTop:"50px"}}>

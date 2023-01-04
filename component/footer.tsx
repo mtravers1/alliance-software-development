@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import Link from "next/link";
 import {useState} from 'react'
@@ -10,7 +10,18 @@ export const Footer = ({}) => {
         {img:'', title:'Service', option1:'Domain', title2:'Hosting', title3:'Company', option2:'About', option3:'Contact Us',
         title4:'Help', option4:'FAQ', option5:'Help support'}
     ])
-    
+    useEffect(()=>{
+      const fetchdata = async()=>{
+        try{
+          let res=await fetch('')
+          let data = await res.json()
+          setFoot(data)
+        }catch(err){
+          console.log(err)
+        }
+      }
+      (async()=>fetchdata())
+    })
   return (
     <BackgroundRootRootRoot style={{marginTop:"100px"}}>
         {foot.map(fo=>(
