@@ -12,18 +12,18 @@ export const Getstarted = ({}) => {
     button:"Get started"}
   ]) 
 
-  useEffect(()=>{
-    const fetchdata=async()=>{
-      try{
-        let res = await fetch('localhost:3000/getstarted')
-        let data = await res.json()
-        setGetstarted(data)
-      }catch(err){
-        console.log(err)
-      }
-    }
-    (async()=>fetchdata())
-  })
+  // useEffect(()=>{
+  //   const fetchdata=async()=>{
+  //     try{
+  //       let res = await fetch('localhost:3000/getstarted')
+  //       let data = await res.json()
+  //       setGetstarted(data)
+  //     }catch(err){
+  //       console.log(err)
+  //     }
+  //   }
+  //   (async()=>fetchdata())
+  // },[])
   // useEffect(()=>{
   //   fetch('localhost:3000/getstarted')
   //   .then(res=>{

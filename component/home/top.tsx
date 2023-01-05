@@ -37,25 +37,25 @@ export const Top = ({}) => {
 
 
 
-            useEffect(()=>{
-              const fetchdata = async ()=>{
+          //   useEffect(()=>{
+          //     const fetchdata = async ()=>{
 
-              try{
+          //     try{
             
-                const res= await fetch('http://localhost:3000/header')
-                const data=res.json()
-                console.log(data)
-                setHeader(await data)
+          //       const res= await fetch('http://localhost:3000/header')
+          //       const data=res.json()
+          //       console.log(data)
+          //       setHeader(await data)
                 
-              }
-              catch(err){
-                console.log(err)
-              }
-            }
+          //     }
+          //     catch(err){
+          //       console.log(err)
+          //     }
+          //   }
 
-            (async ()=> await fetchdata())
+          //   (async ()=> await fetchdata())
 
-          },[])
+          // },[])
           console.log(setHeader)
 
 

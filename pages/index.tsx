@@ -168,7 +168,7 @@ interface perfectdomain{
             </NewGroupdir>
             <Illustrationdir />
           </ValueRootRootRootdir>
-          <Simpleprocess/>
+          {/* <Simpleprocess/> */}
           
           <ValueRootRootRootsupport>
             <NewGroupsupport>

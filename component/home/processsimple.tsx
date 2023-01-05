@@ -21,23 +21,23 @@ export const Simpleprocess= ({}) => {
         button:"Get Started"}
         )
 
-        useEffect(()=>{
-          const fetchdata= async()=>{
+  //       useEffect(()=>{
+  //         const fetchdata= async()=>{
 
-          try{
-              let res = await fetch('')
-              let data = await res.json()
-              setProcess(data)
-            }catch(err){
-              console.log(err)
-          }
-          }
-          (async ()=> await fetchdata())
-        }
+  //         try{
+  //             let res = await fetch('')
+  //             let data = await res.json()
+  //             setProcess(data)
+  //           }catch(err){
+  //             console.log(err)
+  //         }
+  //         }
+  //         (async ()=> await fetchdata())
+  //       }
 
-        )
+  //       ),[]
         
-  };
+  // };
   return (
     <NewRootRootRootRoot>
       <Background>
@@ -154,3 +154,4 @@ const ActiveButton = styled.div`
   line-height: 24px;
   white-space: nowrap;
 `;
+}

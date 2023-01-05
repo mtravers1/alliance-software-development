@@ -23,24 +23,24 @@ const Learn= ()=>{
         {id:1, img:"", title:"Intergration", descriptions:"Lorem ipsum dolor sit amet, consecte tur adipiscing elit ut aliquam.", foot:"learn more" }
      ])
 
-     useEffect(()=>{
-      const fetchdata=async()=>{
-        try{
-          let res = await fetch('http://localhost:8000/uniquefeatures')
-          let res1 =await fetch('http://localhost:8000/domainhosting')
-          let res2 = await fetch('http://localhost:8000/intergration')
-          let data = await res.json()
-          let data1= await res1.json()
-          let data2 = await res2.json()
-          setUniquefeatures(data)
-          setIntergration(data2)
-          setDomainhosting(data1)
-        }catch(err){
-          console.log(err)
-        }
-      }
-      (async()=>fetchdata())
-     })
+    //  useEffect(()=>{
+    //   const fetchdata=async()=>{
+    //     try{
+    //       let res = await fetch('http://localhost:8000/uniquefeatures')
+    //       let res1 =await fetch('http://localhost:8000/domainhosting')
+    //       let res2 = await fetch('http://localhost:8000/intergration')
+    //       let data = await res.json()
+    //       let data1= await res1.json()
+    //       let data2 = await res2.json()
+    //       setUniquefeatures(data)
+    //       setIntergration(data2)
+    //       setDomainhosting(data1)
+    //     }catch(err){
+    //       console.log(err)
+    //     }
+    //   }
+    //   (async()=>fetchdata())
+    //  },[])
 
 
 
