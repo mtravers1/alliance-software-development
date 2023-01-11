@@ -2,7 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { useState } from "react";
 import { useEffect } from "react";
-import data from './data/db.json'
+import data from '/data/db.json'
+
+
 export const Howitworks = ({}) => {
   const Button1Function = () => {
     alert(` was clicked`);
