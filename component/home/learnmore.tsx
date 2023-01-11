@@ -2,7 +2,22 @@
 import React, { useEffect } from "react"
 import styled from "styled-components"
 import { useState } from "react";
+import data from '/data/db.json'
 
+interface domainhostin{
+  id:number
+  img:string
+  title:string
+  descriptions:string
+  foot:string
+}
+interface uniquefeatures{
+  id:number
+  img:string
+  title:string
+  descriptions:string
+  foot:string
+}
 const Learn= ()=>{
     const Text2Function = () => {
         alert();
@@ -11,17 +26,20 @@ const Learn= ()=>{
         alert(``);
       };
 
-      const [uniquefeatures, setUniquefeatures]= useState([
-        {id:1, img:"", title:"New Unique Features", descriptions:"Lorem ipsum dolor sit amet, consecte tur adipiscing elit ut aliquam.", foot:"learn more" }
-     ])
+    //   const [uniquefeatures, setUniquefeatures]= useState([
+    //     {id:1, img:"", title:"New Unique Features", descriptions:"Lorem ipsum dolor sit amet, consecte tur adipiscing elit ut aliquam.", foot:"learn more" }
+    //  ])
+     const [uniquefeatures, setUniquefeatures]= useState(data.uniquefeatures)
 
      const [domainhosting, setDomainhosting]= useState([
         {id:1, img:"", title:"Domain Hosting", descriptions:"Lorem ipsum dolor sit amet, consecte tur adipiscing elit ut aliquam.", foot:"learn more" }
      ])
+    // const [domainhosting, setDomainhosting]= useState(data.domainhosting)
 
-     const [intergration, setIntergration]= useState([
-        {id:1, img:"", title:"Intergration", descriptions:"Lorem ipsum dolor sit amet, consecte tur adipiscing elit ut aliquam.", foot:"learn more" }
-     ])
+    //  const [intergration, setIntergration]= useState([
+    //     {id:1, img:"", title:"Intergration", descriptions:"Lorem ipsum dolor sit amet, consecte tur adipiscing elit ut aliquam.", foot:"learn more" }
+    //  ])
+    const [intergration, setIntergration]= useState(data.intergration)
 
     //  useEffect(()=>{
     //   const fetchdata=async()=>{
@@ -75,7 +93,7 @@ const Learn= ()=>{
     return(
 <ValueRootRootRoot style={{paddingTop:"50px"}}>
 
-    {uniquefeatures.map((unique,index)=>(
+    {uniquefeatures.map((unique:uniquefeatures,index:any)=>(
         <>
             <IconPlaceholder2
             src={`https://file.rendit.io/n/9GXiNiatoAlid9X61UMQ.svg`}
@@ -97,7 +115,7 @@ const Learn= ()=>{
         </>
 
     ))}
-      {domainhosting.map((domain, index)=>(
+      {domainhosting.map((domain:domainhostin, index: any)=>(
            
            <><IconPlaceholder2
             src={`https://file.rendit.io/n/9GXiNiatoAlid9X61UMQ.svg`}
@@ -118,7 +136,7 @@ const Learn= ()=>{
           </NewGroup3>
           </>
       ))}
-      {intergration.map((inter, index)=>(
+      {intergration.map((inter: { id: React.Key | null | undefined; title: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; descriptions: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; foot: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; })=>(
         <>
         <IconPlaceholder2
         src={`https://file.rendit.io/n/9GXiNiatoAlid9X61UMQ.svg`}

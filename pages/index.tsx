@@ -17,7 +17,14 @@ interface perfectdomain{
     title:string
     description:string
     search:string
-    
+    backgroundcolor:string
+    titlecolor:string
+    titlesize:string
+    dcolor:string
+    dsize:string
+    dcfont:string
+    buttoncolor:string
+    button:string
 }
 
       
@@ -62,9 +69,20 @@ interface perfectdomain{
             // }).then(()=>{
             //   console.log('newdata')
             // })
-            const [perfectdomain, setPerfectdomain]=useState(
-              {id:1, title:"Find the perfect domain name", description:"", search:"", img:""}
-            )
+            const [perfectdomain, setPerfectdomain]=useState([
+              {id:1, 
+              backgroundcolor:"", 
+              titlecolor:"", 
+              titlesize:"", 
+              title:"Find the perfect domain name", 
+              dcolor:"", 
+              dsize:"", 
+              dcfont:"", 
+              description:"Enter you select domain name and choose any extenion name in the next step", 
+              buttoncolor:"", 
+              button:"Search", 
+              img:""}
+              ])
             const [directory, setDirectory]= useState([{
               title:"View our Full App Directory", 
               description:"Our suite includes many full scale appliations and software for hundreds of different uses and benifits. Click the link to view our full directory and see how Alliance Software & Development can help",
@@ -119,14 +137,41 @@ interface perfectdomain{
             </Container>
                       </>
                     ))} */}
-            <NewGroup>
-              <Text1>Find the perfect domain name</Text1>
+           {/* <NewGroup> */}
+              {perfectdomain.map((p,index:any)=>(
+                <>
+                 <NewGroup  style={{backgroundColor:p.backgroundcolor}} key={index}>
+                <Text1 style={{color:p.titlecolor, fontSize:p.titlesize}} >{p.title}</Text1>
+                <Paragraph style={{color:p.dcfont, fontSize:p.dsize}}>
+               {p.description}
+              </Paragraph>
+              </NewGroup>
+              <Container>
+              
+
+              <Text2>Search your domain name</Text2>
+              <FlexRow>
+                <Button2 onClick={(e) => Button2Function()}>
+                  <Text3>Com</Text3>
+                  <ArrowChevronDown
+                    src={`https://file.rendit.io/n/fdBVqrSuX2i0KdtTouBh.svg`}
+                  />
+                </Button2>
+                <Button1 style={{backgroundColor:p.buttoncolor}} onClick={(e) => Button1Function()}>
+                  <ActiveButton>{p.button}</ActiveButton>
+                </Button1>
+              </FlexRow>
+            </Container>
+                </>
+               
+              ))}
+              {/* <Text1>Find the perfect domain name</Text1>
               <Paragraph>
                 Enter your select domain name and choose any extension name in the
                 next step (choose between .com, .online, .tech, .site, .net, and more)
               </Paragraph>
-            </NewGroup>
-            <Container>
+            </NewGroup> */}
+            {/* <Container>
               
 
               <Text2>Search your domain name</Text2>
@@ -141,7 +186,7 @@ interface perfectdomain{
                   <ActiveButton>Search</ActiveButton>
                 </Button1>
               </FlexRow>
-            </Container>
+            </Container> */}
           </BackgroundRootRootRootRoot>
           </div>
           <Howitworks/>

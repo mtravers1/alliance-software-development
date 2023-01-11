@@ -1,25 +1,95 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Header } from "../component/header";
 import styled from "styled-components";
 import { Findname } from "../component/domain/findname";
 import { Security } from "../component/domain/security";
 import { Getstarted } from "../component/getstarted";
 import { Footer } from "../component/footer";
-
+import { useState } from "react";
 const Finddomain = ()=>{
+  const [perfectdomain, setPerfectdomain]=useState([
+    {id:1, 
+    backgroundcolor:"", 
+    titlecolor:"", 
+    titlesize:"", 
+    title:"Find the perfect domain name", 
+    dcolor:"", 
+    dsize:"", 
+    dcfont:"", 
+    description:"Enter you select domain name and choose any extenion name in the next step", 
+    buttoncolor:"green", 
+    button:"Search", 
+    img:""}
+    ])
+
+    const [viewdir, setViewdir]=useState([
+      {title:"View our Full App Directory",
+      titlesize:"",
+      titlecolor:"",
+      description:"Our suite includes many full scale appliations and software for hundreds of different uses and benifits. Click the link to view our full directory and see how Alliance Software & Development can help",
+      button:"",
+      buttoncolor:"",
+      img:"",
+      }
+    ])
     const Button2Function=()=>{
         return('')
     }
     const Button1Function = ()=>{
         return('')
     }
+
+    // const API_URL='http://localhost800/viewdir'
+
+    // useEffect(()=>{
+    //   const fetchdata= async()=>{
+    //     try{
+    //       let res = await fetch(API_URL)
+    //       let data = await res.json()
+    //       setViewdir(data)
+    //     }catch(err){
+    //       console.log(err)
+    //     }
+    //     (async()=>fetchdata())()
+    //   }
+    // })
     return(
         <div style={{display:"flex", justifyContent:"center", alignItems:"center", flexDirection:"column"}}>
         <div >
             <Header/>
             
-            <BackgroundRootRootRootRoot style={{marginTop:"100px"}}>
-      <NewGroup>
+            {perfectdomain.map((p,index:any)=>(
+                <div  key={index}>
+                              <BackgroundRootRootRootRoot style={{backgroundColor:p.backgroundcolor, marginTop:"100px"}}>
+
+                 <NewGroup  >
+                <Text1 style={{color:p.titlecolor, fontSize:p.titlesize}} >{p.title}</Text1>
+                <Paragraph style={{color:p.dcfont, fontSize:p.dsize}}>
+               {p.description}
+              </Paragraph>
+              </NewGroup>
+              <Container>
+              
+
+              <Text2>Search your domain name</Text2>
+              <FlexRow>
+                <Button2 onClick={(e) => Button2Function()}>
+                  <Text3>Com</Text3>
+                  <ArrowChevronDown
+                    src={`https://file.rendit.io/n/fdBVqrSuX2i0KdtTouBh.svg`}
+                  />
+                </Button2>
+                <Button1 style={{backgroundColor:p.buttoncolor}} onClick={(e) => Button1Function()}>
+                  <ActiveButton>{p.button}</ActiveButton>
+                </Button1>
+              </FlexRow>
+            </Container>
+            </BackgroundRootRootRootRoot>
+
+                </div>
+               
+              ))}
+      {/* <NewGroup>
         <Text1>Find the perfect domain name</Text1>
         <Paragraph>
           Enter your select domain name and choose any extension name in the
@@ -39,8 +109,7 @@ const Finddomain = ()=>{
             <ActiveButton>Search</ActiveButton>
           </Button1>
         </FlexRow>
-      </Container>
-    </BackgroundRootRootRootRoot>
+      </Container> */}
     </div>
     <Findname/>
     <div>

@@ -1,10 +1,67 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
-
+import { useState } from "react";
 export const Findname = ({}) => {
+
+  const [findname, setFindname]=useState([{
+    title:"How to Find the Ideal Name for a Domain",
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,purus sit amet luctus vene",
+    box1:"01", box1d:"Know your audience", box1c:"", box1ff:"", box1s:"", box1ds:"",
+    box2:"02", box2d:"Research Keywords", box2c:"", box2s:"", box2ds:"",
+    box3:"03", box3d:"Less and Simple", box3c:"", box3s:"", box3ds:"",
+    box4:"04", box4d:"Be the first", box4c:"", box4s:"", box4ds:"",
+    bottomimg:""
+    
+
+  }])
+  
+  // const API_URL='http://localhost/8000/findname'
+  // useEffect(()=>{
+  //   const fetchdata = async()=>{
+  //     try{
+  //       let res = await fetch(API_URL)
+  //       let data = await res.json()
+  //       setFindname(data)
+  //     }catch(err){
+  //       console.log(err)
+  //     }
+  //   }
+  //   (async()=>fetchdata())()
+  // })
   return (
     <StepRootRootRoot style={{marginTop:"100px"}}>
-      <Text1>How to Find the Ideal Name for a Domain</Text1>
+      {findname.map((f)=>(
+        <>
+        <Text1>{f.title}</Text1>
+      <Paragraph>
+        {f.description}
+      </Paragraph>
+      <NewGroup>
+        <Container3 style={{backgroundColor:f.box1c}}>
+          <Text2>{f.box1}</Text2>
+          <Text3>{f.box1d}</Text3>
+        </Container3>
+        <Container2 style={{backgroundColor:f.box2c}}>
+          <Text4>{f.box2}</Text4>
+          <Text3>{f.box2d}</Text3>
+        </Container2>
+        <Container2 style={{backgroundColor:f.box3c}}>
+          <Text6>{f.box3}</Text6>
+          <Text3>{f.box3d}</Text3>
+        </Container2>
+        <Container2 style={{backgroundColor:f.box4c}}>
+          <Text8>{f.box4}</Text8>
+          <Text3>{f.box4d}</Text3>
+        </Container2>
+      </NewGroup>
+      <Illustration />
+
+  <span style={{width:"1232px", height:"480px", borderRadius:"8px", backgroundColor: "#ebebeb" }}>
+    {f.bottomimg}
+  </span>
+        </>
+      ))}
+      {/* <Text1>How to Find the Ideal Name for a Domain</Text1>
       <Paragraph>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
         purus sit amet luctus vene
@@ -27,7 +84,7 @@ export const Findname = ({}) => {
           <Text3>Be the First</Text3>
         </Container2>
       </NewGroup>
-      <Illustration />
+      <Illustration /> */}
     </StepRootRootRoot>
   );
 };

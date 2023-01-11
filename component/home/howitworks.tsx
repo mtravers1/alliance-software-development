@@ -2,17 +2,20 @@ import React from "react";
 import styled from "styled-components";
 import { useState } from "react";
 import { useEffect } from "react";
-
+import data from './data/db.json'
 export const Howitworks = ({}) => {
   const Button1Function = () => {
     alert(` was clicked`);
   };
 
-  const [howitwork, setHowitwork]=useState([
-    {id:1, title:"How it works", description:"", pricing:"Pricing", title1:"Custom Site Design and Hosting",
-     desciption1:"This includes you site design and hosting services:", 
-     rate:"$1000 @ $ 89.99/mo", select:"Select", option1:"1 Website", option2:"Continious Updates", option3:"1 Domain Name", option4:"Feature", option5:"1 Email account", option6:"Feature"}
-  ])
+  // const [howitwork, setHowitwork]=useState([
+  //   {id:1, title:"How it works", description:"", pricing:"Pricing", title1:"Custom Site Design and Hosting",
+  //    desciption1:"This includes you site design and hosting services:", 
+  //    pbackgroundcolor:"", pcolor:"",  sbackground:"",
+  //    rate:"$1000 @ $ 89.99/mo", select:"Select", option1:"1 Website", option2:"Continious Updates", option3:"1 Domain Name", option4:"Feature", option5:"1 Email account", option6:"Feature"}
+  // ])
+  
+  const [howitwork, setHowitwork]=useState(data.howitworks)
   // useEffect(()=>{
   //   fetch('http://localhost:8000/howitworks')
   //   .then(res=>{
@@ -39,13 +42,13 @@ export const Howitworks = ({}) => {
   return (
     <BackgroundRootRootRoot style={{marginTop:"50px"}}>
       <Container>
-        {howitwork.map(how=>(
+        {howitwork.map((how: { title: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; description: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; pbackgroundcolor: any; pricing: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; title1: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; rate: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; desciption1: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; sbackground: any; select: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; option1: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; option2: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; option3: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; option4: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; option5: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | null | undefined; })=>(
             <>
              <HowItWorks>{how.title}</HowItWorks>
         <Paragraph>
           {how.description}
         </Paragraph>
-        <Container1>
+        <Container1 style={{backgroundColor:how.pbackgroundcolor}}>
           <Text1>{how.pricing}</Text1>
         </Container1>
         <Text2>{how.title1}</Text2>
@@ -55,7 +58,7 @@ export const Howitworks = ({}) => {
             {how.desciption1}
           </Paragraph1>
         </FlexColumn>
-        <Button1 onClick={() => Button1Function()}>
+        <Button1 style={{backgroundColor:how.sbackground}} onClick={() => Button1Function()}>
           <ActiveButton>{how.select}</ActiveButton>
         </Button1>
         <FlexRow>

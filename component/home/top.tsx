@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { useState,useEffect } from "react";
 import { ReactNode } from "react";
+import data from '/data/db.json'
 interface header{
 
     id:number
@@ -9,40 +10,39 @@ interface header{
     subheader:string
     headerbutton:string
     headerimg:string
-    map:[{
-      id:number
-      headertitle:string
-      subheader:string
-      headerbutton:string
-      headerimg:string
-    }]
-}
+    headtitlecolor:string
+    headsie:string
+    subsize:string
+    buttonsize:string
+    buttoncolor:string
+    fontcolor:string
+  }
+
 
 export const Top = ({}) => {
   const Button1Function = () => {
     alert(` was clicked`);
   };
 
-  const [header,setHeader]=useState(   [{
-    id:1,
-    headertitle:" It’s time to bring your concept to reality with ASD",
-    headersub:"Anything you can imagine can be built for you by our world class team",
-    headerbutton:"Get Started Today!",
-    headerimg:""
-
-}])
-
-
-// const [header, setHeader]=useState([])
+//   const [header,setHeader]=useState([{
+//     id:1,
+//     headertitle:" It’s time to bring your concept to reality with ASD",
+//     headersub:"Anything you can imagine can be built for you by our world class team",
+//     headerbutton:"Get Started Today!",
+//     headerimg:""
+// }])
 
 
+const [header, setHeader]=useState(data.header)
+
+          //     const API_URL='http://localhost:8000/header'
 
           //   useEffect(()=>{
           //     const fetchdata = async ()=>{
 
           //     try{
             
-          //       const res= await fetch('http://localhost:3000/header')
+          //       const res= await fetch(API_URL)
           //       const data=res.json()
           //       console.log(data)
           //       setHeader(await data)
@@ -53,10 +53,10 @@ export const Top = ({}) => {
           //     }
           //   }
 
-          //   (async ()=> await fetchdata())
+          //   (async ()=> await fetchdata())()
 
           // },[])
-          console.log(setHeader)
+        
 
 
 
@@ -80,6 +80,7 @@ export const Top = ({}) => {
             // }).then(()=>{
             //   console.log('newdata')
             // })
+            console.log(setHeader)
             
   return (
     <>
@@ -94,13 +95,23 @@ export const Top = ({}) => {
 }) =>(
             <><Group2 key={head.id}>
                 <Paragraph >
+                {/* <Paragraph style={{color:head.headtitlecolor, fontSize:head.headsize}}> */}
+
                   {head.headertitle}
                 </Paragraph>
+                {/* <Paragraph1 style={{color:head.subcolor, fontSize:head.subcolor}}> */}
                 <Paragraph1>
+              
                     {head.headersub}
                 </Paragraph1>
-            </Group2><Button1 onClick={() => Button1Function()}>
-                    <ActiveButton>{head.headerbutton}</ActiveButton>
+            </Group2>
+            <Button1 onClick={() => Button1Function()}>
+            {/* <Button1  onClick={() => Button1Function()} style={{backgroundColor:head.buttonbackground}} > */}
+
+                    <ActiveButton >{head.headerbutton}</ActiveButton>
+                    {/* <ActiveButton style={{fontSize:head.buttonsize, color:head.buttoncolor}} >{head.headerbutton}</ActiveButton> */}
+
+               
                 </Button1></> 
       
         )) }

@@ -1,13 +1,75 @@
 import React from "react";
 import styled from 'styled-components';
 import Link from "next/link";
+import data from '../data/db.json'
+import { useState,useEffect } from "react";
+
+interface header{
+  nav1:string
+  nav2:string
+  nav3:string
+  nav4:string
+  nav5:string
+  navbutton:string
+  size:string
+  color:string
+  ffamily:string
+  navbuttoncolor:string
+}
+
+
 export const Header = ({}) => {
   const Button1Function = () => {
     alert(`was clicked`);
   };
+
+const [nav, setNav]=useState(data.nav)
+//   const API_URL='http://localhost:8000/nav'
+//   useEffect(()=>{
+//     const fetchdata = async()=>{
+//       try{
+//         let res = await fetch(API_URL)
+//         let data = await res.json()
+//         setNav(data)
+//       }catch(err){
+//         console.log(err)
+//       }
+//     }
+//   (async()=>fetchdata())()
+//   },[])
+
+  
+
   return (
     <NewRootRootRootRoot>
-      <Container>
+      {nav.map((h:header)=>(
+        <>
+        <Container >
+
+        <Link href="./"><Image1 src={`https://file.rendit.io/n/LWKypLKsROHg9A8UFfGE.png`} /></Link>
+        <Text1 style={{fontSize:h.size, color:h.color, fontFamily:h.ffamily}}>
+            <option>{h.nav1}
+                </option></Text1>
+        
+        <ArrowChevronDown
+          src={`https://file.rendit.io/n/b4AmT9sRKKNjCNguc5XR.svg`}
+        />
+        <Text1 style={{fontSize:h.size, color:h.color, fontFamily:h.ffamily}}>
+            <option>{h.nav2}</option></Text1>
+        <ArrowChevronDown
+          src={`https://file.rendit.io/n/b4AmT9sRKKNjCNguc5XR.svg`}
+        />
+        <Text3 style={{fontSize:h.size, color:h.color, fontFamily:h.ffamily}}>{h.nav3}</Text3>
+        <Text3 style={{fontSize:h.size, color:h.color, fontFamily:h.ffamily}}>{h.nav4}</Text3>
+        <Text5 style={{fontSize:h.size, color:h.color, fontFamily:h.ffamily}}>{h.nav5}</Text5>
+        <Button1 style={{backgroundColor:h.navbuttoncolor, fontSize:h.size, color:h.color, fontFamily:h.ffamily}} >
+          <Link href="./login" ><ActiveButton >{h.navbutton}</ActiveButton></Link>
+        </Button1>
+      </Container>
+      </>
+      ))}
+      {/* <Container>
+
         <Link href="./"><Image1 src={`https://file.rendit.io/n/LWKypLKsROHg9A8UFfGE.png`} /></Link>
         <Text1>
             <option>Hosting
@@ -27,7 +89,7 @@ export const Header = ({}) => {
         <Button1 >
           <Link href="./login"><ActiveButton>Login</ActiveButton></Link>
         </Button1>
-      </Container>
+      </Container> */}
     </NewRootRootRootRoot>
   );
 };

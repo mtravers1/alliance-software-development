@@ -1,11 +1,34 @@
 {
+    "nav":[
+      {"nav1":"Hosting",
+        "nav2":"Domain",
+        "nav3":"Email",
+        "nav4":"Webiste Builder",
+        "nav5":"Pricing",
+        "navbutton":"Login",
+        "navbuttoncolor":"",
+        "ffamily":"",
+        "color":"",
+        "size":""
+      }
+    ],
     "header":[
         {
             "id":1,
             "headertitle":" It’s time to bring your concept to reality with ASD",
+            "headtitlecolor":"",
+            "headsize":"",
+            
             "headersub":"Anything you can imagine can be built for you by our world class team",
+            "subsize":"",
+            "subcolor":"",
             "headerbutton":"Get Started Today!",
-            "headerimg":""
+            "buttonsize":"",
+            "buttoncolor":"",
+            "headerimg":"",
+            "fontcolor":"",
+            "buttonbackground":""
+            
 
         }
     ],
@@ -83,6 +106,56 @@
         "option5":"1 Email account", 
         "option6":"Feature"}
      
+      ],
+      "findname":[{
+        "title":"How to Find the Ideal Name for a Domain",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,purus sit amet luctus vene",
+        "box1":"01", 
+        "box1d":"Know your audience", 
+        "box1c":"", 
+        "box1ff":"", 
+        "box1s":"", 
+        "box1ds":"",
+        "box2":"02", 
+        "box2d":"Research Keywords", 
+        "box2c":"", 
+        "box2s":"", 
+        "box2ds":"",
+        "box3":"03", 
+        "box3d":"Less and Simple", 
+        "box3c":"", 
+        "box3s":"", 
+        "box3ds":"",
+        "box4":"04", 
+        "box4d":"Be the first", 
+        "box4c":"", 
+        "box4s":"", 
+        "box4ds":"",
+        "bottomimg":""
+        
+    
+      }],
+      "viewdir":[
+        {
+        "title":"View our Full App Directory",
+        "titlesize":"",
+        "titlecolor":"",
+        "description":"Our suite includes many full scale appliations and software for hundreds of different uses and benifits. Click the link to view our full directory and see how Alliance Software & Development can help",
+        "button":"",
+        "buttoncolor":"",
+        "img":""
+        }
+      ],
+      "securtity":[
+        {
+        "title":"The Best Speed & Security Hosting",
+        "titlesize":"",
+        "descriptionsize":"",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque sit viverra turpis eu. Pellentesque scelerisque nec enim tempus netus mi proin viverra eu. Auctor neque, amet, eget elit. Libero nascetur porttitor mattis urna et consectetur. Placerat vulputate eget nam habitasse. Faucibus tristique nisl, libero quis cursus eu faucibus vel. Lobortis est, vel rutrum dictumst sagittis, rhoncus egestas quis orci. Ultricies scelerisque donec sagittis ante tristique cursus elementum.",
+        "button":"Learn More",
+        "buttoncolor":"",
+        "img":""
+        }
       ]
 
 }
