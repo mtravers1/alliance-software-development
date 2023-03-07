@@ -1,0 +1,168 @@
+{
+    "nav":[
+      {"nav1":"Apps",
+        "nav2":"Platforms",
+        "nav3":"Upcoming Projects",
+        "nav4":"About Us",
+        "nav5":"Contact Us",
+        "navbutton":"",
+        "navbuttoncolor":"",
+        "ffamily":"",
+        "color":"",
+        "size":""
+      }
+    ],
+    "header":[
+        {
+            "id":1,
+            "headertitle":" It’s time to bring your concept to reality with ASD",
+            "headtitlecolor":"",
+            "headsize":"",
+            
+            "headersub":"Anything you can imagine can be built for you by our world class team",
+            "subsize":"",
+            "subcolor":"",
+            "headerbutton":"Get Started Today!",
+            "buttonsize":"",
+            "buttoncolor":"",
+            "headerimg":"",
+            "fontcolor":"",
+            "buttonbackground":""
+            
+
+        }
+    ],
+    "uniquefeatures":[
+        {
+        "id":1, 
+        "img":"", 
+        "title":"New Unique Features", 
+        "descriptions":"Lorem ipsum dolor sit amet, consecte tur adipiscing elit ut aliquam.", 
+        "foot":"learn more" 
+    }
+
+    ],
+    "domainhosting":[
+        {"id":1, 
+        "img":"", 
+        "title":"Domain Hosting", 
+        "descriptions":"Lorem ipsum dolor sit amet, consecte tur adipiscing elit ut aliquam.", 
+        "foot":"learn more" }
+
+    ],
+    "intergration":[
+        {"id":1, 
+        "img":"", 
+        "title":"Intergration", 
+        "descriptions":"Lorem ipsum dolor sit amet, consecte tur adipiscing elit ut aliquam.", 
+        "foot":"learn more" 
+    }
+
+    ],
+    "perfectdomain":[
+              {"id":1, 
+              "title":"Find the perfect domain name", 
+              "description":"", 
+              "search":"", 
+              "img":""}
+    ],
+    "directory":[
+        {
+        "title":"View our Full App Directory", 
+        "description":"Our suite includes many full scale appliations and software for hundreds of different uses and benifits. Click the link to view our full directory and see how Alliance Software & Development can help",
+        "button":"learn more"
+      }
+    ],
+    "getstarted":[
+        {"title":"Let’s start something magical with Alliance!", 
+        "button":"Get started"}
+      ],
+      "foot":[
+        {"img":"", 
+        "title":"Service", 
+        "option1":"Domain", "title2":"Hosting", "title3":"Company", "option2":"About", "option3":"Contact Us",
+        "title4":"Help", "option4":"FAQ", "option5":"Help support"}
+      ],
+      "simple":[
+        {"title":"We Make this process simple",
+        "description":"Having a website should’nt be a hassle. We make it as simple as possible by doing all of the work for you. Once you choose us, we will walk you the entire process step by step and tailor your site to your every needs! Find out for yourself by clicking the link belw to get started!" , 
+        "button":"Get Started"
+
+    }
+      ],
+      "howitworks":[
+        {"id":1,
+        "title":"How it works", 
+        "description":"", 
+        "pricing":"Pricing", 
+        "title1":"Custom Site Design and Hosting",
+        "desciption1":"This includes you site design and hosting services:", 
+        "rate":"$1000 @ $ 89.99/mo", 
+        "select":"Select", 
+        "option1":"1 Website", 
+        "option2":"Continious Updates", 
+        "option3":"1 Domain Name", 
+        "option4":"Feature", 
+        "option5":"1 Email account", 
+        "option6":"Feature"}
+     
+      ],
+      "findname":[{
+        "title":"How to Find the Ideal Name for a Domain",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,purus sit amet luctus vene",
+        "box1":"01", 
+        "box1d":"Know your audience", 
+        "box1c":"", 
+        "box1ff":"", 
+        "box1s":"", 
+        "box1ds":"",
+        "box2":"02", 
+        "box2d":"Research Keywords", 
+        "box2c":"", 
+        "box2s":"", 
+        "box2ds":"",
+        "box3":"03", 
+        "box3d":"Less and Simple", 
+        "box3c":"", 
+        "box3s":"", 
+        "box3ds":"",
+        "box4":"04", 
+        "box4d":"Be the first", 
+        "box4c":"", 
+        "box4s":"", 
+        "box4ds":"",
+        "bottomimg":""
+        
+    
+      }],
+      "viewdir":[
+        {
+        "title":"View our Full App Directory",
+        "titlesize":"",
+        "titlecolor":"",
+        "description":"Our suite includes many full scale appliations and software for hundreds of different uses and benifits. Click the link to view our full directory and see how Alliance Software & Development can help",
+        "button":"",
+        "buttoncolor":"",
+        "img":""
+        }
+      ],
+      "securtity":[
+        {
+        "title":"The Best Speed & Security Hosting",
+        "titlesize":"",
+        "descriptionsize":"",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque sit viverra turpis eu. Pellentesque scelerisque nec enim tempus netus mi proin viverra eu. Auctor neque, amet, eget elit. Libero nascetur porttitor mattis urna et consectetur. Placerat vulputate eget nam habitasse. Faucibus tristique nisl, libero quis cursus eu faucibus vel. Lobortis est, vel rutrum dictumst sagittis, rhoncus egestas quis orci. Ultricies scelerisque donec sagittis ante tristique cursus elementum.",
+        "button":"Learn More",
+        "buttoncolor":"",
+        "img":""
+        }
+      ]
+
+}
+
+ 
+
+
+
+
+

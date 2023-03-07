@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { useState,useEffect } from "react";
 import { ReactNode } from "react";
-import data from '/data/db.json'
+import data from "./data/db.json";
+
 interface header{
 
     id:number
@@ -89,7 +90,8 @@ const [header, setHeader]=useState(data.header)
       <NewGroup>
        
          
-        { header.map((head: {
+        { 
+        header.map((head: {
             [x: string]: ReactNode;
             headertitle: ReactNode; id: React.Key | null | undefined; 
 }) =>(
@@ -112,7 +114,8 @@ const [header, setHeader]=useState(data.header)
                     {/* <ActiveButton style={{fontSize:head.buttonsize, color:head.buttoncolor}} >{head.headerbutton}</ActiveButton> */}
 
                
-                </Button1></> 
+                </Button1>
+                </> 
       
         )) }
         
