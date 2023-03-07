@@ -2,22 +2,21 @@ import React from "react";
 import styled from "styled-components";
 import { useState } from "react";
 import { useEffect } from "react";
-import data from '/data/db.json'
-
+// import data from '...\data\db.json'
 
 export const Howitworks = ({}) => {
   const Button1Function = () => {
     alert(` was clicked`);
   };
 
-  // const [howitwork, setHowitwork]=useState([
-  //   {id:1, title:"How it works", description:"", pricing:"Pricing", title1:"Custom Site Design and Hosting",
-  //    desciption1:"This includes you site design and hosting services:", 
-  //    pbackgroundcolor:"", pcolor:"",  sbackground:"",
-  //    rate:"$1000 @ $ 89.99/mo", select:"Select", option1:"1 Website", option2:"Continious Updates", option3:"1 Domain Name", option4:"Feature", option5:"1 Email account", option6:"Feature"}
-  // ])
+  const [howitwork, setHowitwork]=useState([
+    {id:1, title:"How it works", description:"", pricing:"Pricing", title1:"Custom Site Design and Hosting",
+     desciption1:"This includes you site design and hosting services:", 
+     pbackgroundcolor:"", pcolor:"",  sbackground:"",
+     rate:"$1000 @ $ 89.99/mo", select:"Select", option1:"1 Website", option2:"Continious Updates", option3:"1 Domain Name", option4:"Feature", option5:"1 Email account", option6:"Feature"}
+  ])
   
-  const [howitwork, setHowitwork]=useState(data.howitworks)
+  // const [howitwork, setHowitwork]=useState(data.howitworks)
   // useEffect(()=>{
   //   fetch('http://localhost:8000/howitworks')
   //   .then(res=>{

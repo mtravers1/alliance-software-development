@@ -2,7 +2,7 @@
 import React, { useEffect } from "react"
 import styled from "styled-components"
 import { useState } from "react";
-import data from '/data/db.json'
+// import data from '.../db.json'
 
 interface domainhostin{
   id:number
@@ -26,20 +26,20 @@ const Learn= ()=>{
         alert(``);
       };
 
-    //   const [uniquefeatures, setUniquefeatures]= useState([
-    //     {id:1, img:"", title:"New Unique Features", descriptions:"Lorem ipsum dolor sit amet, consecte tur adipiscing elit ut aliquam.", foot:"learn more" }
-    //  ])
-     const [uniquefeatures, setUniquefeatures]= useState(data.uniquefeatures)
+      const [uniquefeatures, setUniquefeatures]= useState([
+        {id:1, img:"", title:"New Unique Features", descriptions:"Lorem ipsum dolor sit amet, consecte tur adipiscing elit ut aliquam.", foot:"learn more" }
+     ])
+    //  const [uniquefeatures, setUniquefeatures]= useState(data.uniquefeatures)
 
      const [domainhosting, setDomainhosting]= useState([
         {id:1, img:"", title:"Domain Hosting", descriptions:"Lorem ipsum dolor sit amet, consecte tur adipiscing elit ut aliquam.", foot:"learn more" }
      ])
     // const [domainhosting, setDomainhosting]= useState(data.domainhosting)
 
-    //  const [intergration, setIntergration]= useState([
-    //     {id:1, img:"", title:"Intergration", descriptions:"Lorem ipsum dolor sit amet, consecte tur adipiscing elit ut aliquam.", foot:"learn more" }
-    //  ])
-    const [intergration, setIntergration]= useState(data.intergration)
+     const [intergration, setIntergration]= useState([
+        {id:1, img:"", title:"Intergration", descriptions:"Lorem ipsum dolor sit amet, consecte tur adipiscing elit ut aliquam.", foot:"learn more" }
+     ])
+    // const [intergration, setIntergration]= useState(data.intergration)
 
     //  useEffect(()=>{
     //   const fetchdata=async()=>{

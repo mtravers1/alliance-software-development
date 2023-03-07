@@ -44,27 +44,51 @@ const [nav, setNav]=useState(data.nav)
     <NewRootRootRootRoot>
       {nav.map((h:header)=>(
         <>
-        <Container >
 
+        <Container >
         <Link href="./"><Image1 src={`https://file.rendit.io/n/LWKypLKsROHg9A8UFfGE.png`} /></Link>
         <Text1 style={{fontSize:h.size, color:h.color, fontFamily:h.ffamily}}>
-            <option>{h.nav1}
-                </option></Text1>
+            {/* <select name="apps" id="Apps" multiple> */}
+            
+              <option value="quik">
+              {/* {h.nav1} */}
+              Apps
+                </option>
+                <option value="quik">
+                  QuikSession
+                </option>
+                <option>
+                  Quik Delivers
+                </option>
+                <option>
+                  Quik Dollars
+                </option>
+                <option>
+                  StickMan VIP
+                </option>
+                <option>
+                  Quik Carry
+                </option>
+
+                {/* </select> */}
+                </Text1>
         
-        <ArrowChevronDown
-          src={`https://file.rendit.io/n/b4AmT9sRKKNjCNguc5XR.svg`}
-        />
-        <Text1 style={{fontSize:h.size, color:h.color, fontFamily:h.ffamily}}>
-            <option>{h.nav2}</option></Text1>
-        <ArrowChevronDown
-          src={`https://file.rendit.io/n/b4AmT9sRKKNjCNguc5XR.svg`}
-        />
+        <Text1 style={{fontSize:h.size, color:h.color, fontFamily:h.ffamily, marginLeft:25, marginRight:25}}>
+            <option>{h.nav2}</option>
+            <option>
+              Iphone/Andriod
+            </option>
+            <option>
+              Ipad/Tablet
+            </option>
+
+            
+            </Text1>
+      
         <Text3 style={{fontSize:h.size, color:h.color, fontFamily:h.ffamily}}>{h.nav3}</Text3>
         <Text3 style={{fontSize:h.size, color:h.color, fontFamily:h.ffamily}}>{h.nav4}</Text3>
         <Text5 style={{fontSize:h.size, color:h.color, fontFamily:h.ffamily}}>{h.nav5}</Text5>
-        <Button1 style={{backgroundColor:h.navbuttoncolor, fontSize:h.size, color:h.color, fontFamily:h.ffamily}} >
-          <Link href="./login" ><ActiveButton >{h.navbutton}</ActiveButton></Link>
-        </Button1>
+     
       </Container>
       </>
       ))}

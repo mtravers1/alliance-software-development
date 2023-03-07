@@ -1,11 +1,11 @@
 {
     "nav":[
-      {"nav1":"Hosting",
-        "nav2":"Domain",
-        "nav3":"Email",
-        "nav4":"Webiste Builder",
-        "nav5":"Pricing",
-        "navbutton":"Login",
+      {"nav1":"Apps",
+        "nav2":"Platforms",
+        "nav3":"Upcoming Projects",
+        "nav4":"About Us",
+        "nav5":"Contact Us",
+        "navbutton":"",
         "navbuttoncolor":"",
         "ffamily":"",
         "color":"",
