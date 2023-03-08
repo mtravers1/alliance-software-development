@@ -3,9 +3,9 @@ import styled from "styled-components";
 import { Reviews } from "../component/aboutus/reviews";
 import { Story } from "../component/aboutus/story";
 import { Getstarted } from "../component/getstarted";
-import { Header } from "../component/header";
+import Header from "../component/header";
 import { Footer } from "../component/footer";
-
+import styles from './aboutus.module.css'
 const Aboutus = ()=>{
     return (
         
@@ -13,27 +13,24 @@ const Aboutus = ()=>{
 
 
 
-        <div style={{display:"flex", justifyContent:"center", alignItems:"center", flexDirection:"column"}}>
+        <div className={styles.about}>
         <Header/>
+       
         <div>
-            <HeroRootRootRoot style={{marginTop:"100px", marginBottom:"100px"}}>
-      <NewGroup>
-        <Text1>About Alliance Software & Development</Text1>
-        <Paragraph>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
-          purus sit amet luctus venenatis, lectus magna fringilla urna,
-          porttitor Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-          aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna,
-          porttitor
-          <br />
-          <br />
-          rttitor Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-          aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna,
-          porttitor
-        </Paragraph>
+            <div className={styles.abouthead} style={{marginTop:"100px", marginBottom:"100px"}}>
+      <NewGroup className="">
+  
+        <h1>About Alliance Software & Development</h1>
+        <p>
+        Alliance Software Development aka ASD was founded on September 9th 2018 when Rashad “Quik V” Campbell was introduced to Amen Moja Ra by his father Glen “Stickman” Campbell.
+Quik had a vision to build an app that artists could use to book music studios anytime anywhere. That was the birth of our first app QuikSession. When no one believed Quik’s vision he always believed in himself. And when the right person came along like Amen and he listened to Quik’s idea it just made sense. And with that idea and his charisma the inspiration for a software company was born.
+Amen Moja Ra has over 20 years of experience building software and websites for some of the worlds most well known fortune 500 companies. Amen Moja Ra has work for Accenture, AOL, Care-first/Blue Cross Blue Shield, IBM, Marriott, FAA, NASA, Wells Fargo, Bank of America, The Veterans Administration, and Sonesta Hotels, just to name a few. His goal is to build software that connects to people.
+Stickman is the type of guy who cares about the future. He strives hard to make alliances, and wants the best for everyone. His biggest goal is to see ASD as the world’s leader in Software Development, E-Commerce, Charity, and Social Influencing.
+Alliance Software Development is changing the world, changing lives, and hopes to change you for the better. We will never compromise doing the right thing for convince for anyone or anything no matter what. (edited)
+        </p>
       </NewGroup>
       <Illustration />
-    </HeroRootRootRoot>
+    </div>
         </div>
         <Story/>
         <div>
@@ -51,7 +48,7 @@ const Aboutus = ()=>{
         <Text2a>New User Sign up everyday</Text2a>
       </NewGroup2a>
       <NewGroup3a>
-        <Text1>20k</Text1>
+        <h1>20k</h1>
         <Text2a>Happy Users</Text2a>
       </NewGroup3a>
     </BackgroundRootRootRoota>

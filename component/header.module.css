@@ -1,0 +1,37 @@
+.head{
+    /* display: flex;
+    justify-content: space-between */
+ 
+}
+
+.head div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head span{
+    gap: 0px;
+    display: flex;
+    flex-direction: column;
+     justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    align-items:center;
+}
+
+.contianer{
+    width: 1440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 32px 0px 3px 0px;
+    background-color: #ffffff;
+} 
+
+.img{
+    width: 81px;
+    height: 85px;
+    align-self: center;
+    margin: 0px 0px 0px 0px;
+}

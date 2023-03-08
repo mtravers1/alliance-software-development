@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Hosting } from "../component/Faq/hosting";
 import { Questions } from "../component/Faq/questions";
 import { Footer } from "../component/footer";
-import { Header } from "../component/header";
+import  Header from "../component/header";
 
 
 const Faq = ()=>{

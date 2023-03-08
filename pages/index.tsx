@@ -1,9 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from 'next/head';
+import Image from 'next/image';
 import styles from '../styles/Home.module.css'
 import { ReactNode } from 'react'
 import React, { useEffect, useState } from "react"
-import { Header } from "../component/header";
+import  Header  from "../component/header";
 import { Top } from "../component/home/top";
 import styled from "styled-components";
 import Learn from "../component/home/learnmore";

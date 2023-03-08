@@ -1,0 +1,27 @@
+
+
+.about p{
+width: 608px;
+color: #7f7f7f;
+font-size: 16px;
+font-family: Inter;
+line-height: 32px;
+}
+
+.about h1{
+  width: 608px;
+  color: #2e2e2e;
+  font-size: 48px;
+  font-weight: 700;
+  font-family: Inter;
+  line-height: 63.98400115966797px;
+
+}
+
+.abouthead {
+  width: 1232px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

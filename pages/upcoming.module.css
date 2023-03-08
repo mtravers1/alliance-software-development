@@ -1,0 +1,8 @@
+.upcoming{
+width: 1400px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: auto;
+flex-direction: column;
+}

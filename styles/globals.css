@@ -1,8 +1,9 @@
-
+/*  */
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Sen&display=swap');
-/* @tailwind base;
+
+@tailwind base;
 @tailwind components;
-@tailwind utilities; */
+@tailwind utilities;
 html,
 body {
   padding: 0;
