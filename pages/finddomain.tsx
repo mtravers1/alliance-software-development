@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Header } from "../component/header";
+import  Header  from "../component/header";
 import styled from "styled-components";
 import { Findname } from "../component/domain/findname";
 import { Security } from "../component/domain/security";
