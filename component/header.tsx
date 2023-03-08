@@ -3,6 +3,8 @@ import styles from './header.module.css';
 import Link from "next/link";
 import data from '../data/db.json'
 import { useState,useEffect } from "react";
+import { useRouter } from 'next/router'
+
 
 interface header{
   nav1:string
@@ -20,6 +22,7 @@ interface header{
 
 const Header = ({}) => {
 
+  const router=useRouter()
 
 const [nav, setNav]=useState(data.nav)
 //   const API_URL='http://localhost:8000/nav'
@@ -36,7 +39,10 @@ const [nav, setNav]=useState(data.nav)
 //   (async()=>fetchdata())()
 //   },[])
 
-  
+  const quik = (e:any)=>{
+    router.push('/home')
+
+  }
 
   return (
     <div className={styles.head}>
@@ -57,8 +63,9 @@ const [nav, setNav]=useState(data.nav)
               {/* {h.nav1} */}
               Apps
                 </option>
-                <option value="quik">
-                  QuikSession
+                <option value="./upcoming" onChange={(e)=>quik(e.target)}>
+                  
+                  <Link href="./app/quiksession">QuikSession</Link>
                 </option>
                 <option>
                   Quik Delivers
