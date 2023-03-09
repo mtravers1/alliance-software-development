@@ -1,6 +1,9 @@
 import React from "react";
 import Header from "../component/header";
 import styles from "./upcoming.module.css"
+import { Quiksessionent, Quiksessionbussiness, QuikEngineer } from "../component/apps/quiksession";
+import Stickman from "../component/apps/stickman";
+import { Quikdollars, Quikcarry} from "../component/apps/quik";
 const Upcoming = ()=>{
     return(
         <div className={styles.upcoming}>
@@ -37,7 +40,15 @@ and the driver doesn’t speak the same language as you. Well Quik Assistant tak
 Quik Assistant is just making apps we build make sense to the 
 users who use them.</p> */}
             </div>
+            <div>
+            <Quiksessionent/>
+            <Quiksessionbussiness/>
+            <QuikEngineer/>
+            <Stickman/>
+            <Quikdollars/>
+            <Quikcarry/>
 
+            </div>
         </div>
     )
 }
