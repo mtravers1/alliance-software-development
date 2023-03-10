@@ -39,8 +39,8 @@ const [nav, setNav]=useState(data.nav)
 //   (async()=>fetchdata())()
 //   },[])
 
-  const quik = (e:any)=>{
-    router.push('/home')
+  const quik = ()=>{
+    router.push('/upcoming')
 
   }
 
@@ -57,15 +57,17 @@ const [nav, setNav]=useState(data.nav)
         
         {/* </Link> */}
         <span className="flex justify-between" style={{fontSize:h.size, color:h.color, fontFamily:h.ffamily}}>
+        <Link href="./apps">Apps</Link>
             <select name="apps" id="Apps" >
+              
            
               <option value="quik">
               {/* {h.nav1} */}
               Apps
                 </option>
-                <option value="./upcoming" onChange={(e)=>quik(e.target)}>
+                <option onClick={quik}>
                   
-                  <Link href="./app/quiksession">QuikSession</Link>
+                 QuikSession
                 </option>
                 <option>
                   Quik Delivers

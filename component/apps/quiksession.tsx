@@ -34,7 +34,7 @@ export function Quiksessionent (){
                             This app is positioning itself to fulfill the needs of aspiring artists looking to break into the industry
                         </p>
                     </span>
-                    <span>
+                    <span className="flex">
                         <span className="flex">
                     <Image  alt="logo1" src={ent1} height={200} width={300}/>
                     <Image  alt="logo2" src={ent2} height={200} width={300}/>
@@ -82,7 +82,7 @@ export function Quiksessionbussiness (){
                         </p>
                         
                     </span>
-                    <span>
+                    <span className="flex flex-row-reverse">
                         <span className="flex">
                     <Image  alt="logo1" src={bus1} height={200} width={300}/>
                     
