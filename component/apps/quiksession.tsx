@@ -9,7 +9,7 @@ import bus1 from "/public/bus1.png"
 import eng from "/public/eng.png"
 import eng1 from "/public/eng1.png"
 import qe from "/public/quikengineer.png"
-
+import styles from "./quiksession.module.css"
 
 
 
@@ -17,9 +17,9 @@ import qe from "/public/quikengineer.png"
 
 export function Quiksessionent (){
     return(
-        <div>
+        <div className={styles.quikent}>
             <div>
-                <span className="flex w-full">
+                <span className="flex ">
                 <Image objectFit="none" alt="logo" src={ent} height={200} width={200}/>
                 <p className="flex items-center" style={{alignItems:"center"}}>
                 QuikSession<br/>
@@ -34,13 +34,10 @@ export function Quiksessionent (){
                             This app is positioning itself to fulfill the needs of aspiring artists looking to break into the industry
                         </p>
                     </span>
-                    <span className="flex">
-                        <span className="flex">
-                    <Image  alt="logo1" src={ent1} height={200} width={300}/>
-                    <Image  alt="logo2" src={ent2} height={200} width={300}/>
-                    <Image  alt="logo3" src={ent3} height={200} width={300}/>
 
-                    </span>
+                    <span className="flex">
+                        
+                    <span>
                     <h1>Some of the great features of QuikSessions are:</h1>
                     <ul>
                         <li>
@@ -57,6 +54,13 @@ export function Quiksessionent (){
                     
                     </ul>
                     </span>
+                    <span className="flex justify-between">
+                    <Image  alt="logo1" src={ent1} height={200} width={300}/>
+                    <Image  alt="logo2" src={ent2} height={200} width={300}/>
+                    <Image  alt="logo3" src={ent3} height={200} width={300}/>
+
+                    </span>
+                    </span>
                 </span>
             </div>
 
@@ -66,7 +70,7 @@ export function Quiksessionent (){
 
 export function Quiksessionbussiness (){
     return(
-        <div>
+        <div className={styles.quikent}>
                         <div>
                 <span className="flex">
                 <Image objectFit="none" alt="logo" src={bus} height={200} width={200}/>
@@ -82,11 +86,13 @@ export function Quiksessionbussiness (){
                         </p>
                         
                     </span>
-                    <span className="flex flex-row-reverse">
+                    <span className="flex flex-row-reverse justify-between">
                         <span className="flex">
                     <Image  alt="logo1" src={bus1} height={200} width={300}/>
                     
                     </span>
+                    
+                    <span className="ml-12">
                     <h1>Some of the features of the App are:</h1>
                     <ul>
                         <li>
@@ -102,6 +108,7 @@ export function Quiksessionbussiness (){
                     
                     </ul>
                     </span>
+                    </span>
                 </span>
             </div>
             
@@ -111,7 +118,7 @@ export function Quiksessionbussiness (){
 
 export function QuikEngineer (){
     return(
-        <div>
+        <div className={styles.quikent}>
                      <div>
                 <span className="flex">
                 <Image alt="logo" src={qe} height={200} width={200}/>
@@ -120,8 +127,8 @@ export function QuikEngineer (){
                 QuikSession App for Entertainment
                 </p>
                 </span>
-                <span>
-                    <span>
+                <span className="flex">
+                     <span className="w-1/2"> 
                         <p>
                             Now professional music studion engineers can now provide their services to more than one music studio with ease with QuikEngineer
                         </p>
@@ -133,7 +140,7 @@ export function QuikEngineer (){
                         \an album, using specialized microphones and equipment to realize their artistic vision</p>
                     </span>
                     <span>
-                        <span className="flex">
+                        <span className="flex ">
                     <Image  alt="logo1" src={eng} height={200} width={300}/>
                     <Image  alt="logo1" src={eng1} height={200} width={300}/>
 

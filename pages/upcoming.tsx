@@ -4,13 +4,45 @@ import styles from "./upcoming.module.css"
 import { Quiksessionent, Quiksessionbussiness, QuikEngineer } from "../component/apps/quiksession";
 import Stickman from "../component/apps/stickman";
 import { Quikdollars, Quikcarry} from "../component/apps/quik";
+import Tip from "../public/tipin.png"
+import Image from "next/image";
 const Upcoming = ()=>{
     return(
         <div className={styles.upcoming}>
            <div style={{width:1400}}>
            <Header />
            </div>
+           
+            <div>
+            <h1 className="text-center font-bold">Future Development Project</h1>
+
+                <span className="flex">
+                    <span>
+                        <Image src={Tip} height={200} width={400} alt="logo"/>
+                    </span>
+                    <span>
+                <p>This groundbreaking app now allows Bartenders, Dance Club Security Guards, and Dancers to recieve their tips electronically from patrons. NO MORE ATMs. The inconvenience and security issues of having to go to an ATM when a crowded club are not eliminated with the Tip In App.</p>
+                <ul className="justify-start flex flex-col">
+                    <li>
+                        Tip in App
+                    </li>
+                    <li>
+                        Tip in App for Business
+                    </li>
+                    <li>
+                        Tip in App for Entertainers
+                    </li>
+                    <li>
+                        I Demand Beauti
+                    </li>
+                    <li>
+                        I Demand Beauti for Business
+                    </li>
+                </ul>
+                </span>
+                </span>
             
+            </div>
 
 
         

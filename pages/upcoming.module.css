@@ -6,3 +6,8 @@ align-items: center;
 margin: auto;
 flex-direction: column;
 }
+
+.upcoming ul li::before{  
+    content:"\2611\0020"; 
+   
+}

@@ -16,14 +16,15 @@ const Stickman = ()=>{
             <div className="flex">
             <span className="flex">
                 <Image objectFit="none" alt="logo" src={stick} height={200} width={200}/>
+                
                 <p className="flex items-center" style={{alignItems:"center"}}>
-                StickMan VIP is<br/>
+                StickMan VIP is
                 the Premiere
                 </p>
                 </span>
             </div>
             <div>
-                <Image alt="" src={stick1} height={200} width={200}/>
+                {/* <Image alt="" src={stick1} height={200} width={200}/> */}
                 <b><h1>Vehicle rental tourist app!</h1>
                 <p>Stickman VIP allows its customers to rent cars and other vehicles with ease.<br/>
                 Whether you are looking to rent a group of specialized vehicles or a sing model Stickman VIP can fulfill any need.</p>
