@@ -74,17 +74,7 @@ and the driver doesn’t speak the same language as you. Well Quik Assistant tak
 Quik Assistant is just making apps we build make sense to the 
 users who use them.</p> */}
             </div>
-            <div>
-                
-            <Quiksessionent/>
-            <Quiksessionbussiness/>
-            <QuikEngineer/>
-            <Stickman/>
-            <Quikdollars/>
-            <Quikcarry/>
-            
-
-            </div>
+           
         </div>
     )
 }

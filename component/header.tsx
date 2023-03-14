@@ -57,7 +57,6 @@ const [nav, setNav]=useState(data.nav)
         
         {/* </Link> */}
         <span className="flex justify-between" style={{fontSize:h.size, color:h.color, fontFamily:h.ffamily}}>
-        <Link href="./apps">Apps</Link>
             <select name="apps" id="Apps" onChange={quik}>
               
            
