@@ -6,6 +6,7 @@ import Stickman from "../component/apps/stickman";
 import { Quikdollars, Quikcarry} from "../component/apps/quik";
 import Tip from "../public/tipin.png"
 import Image from "next/image";
+import {Tips} from "../component/apps/tip"
 const Upcoming = ()=>{
     return(
         <div className={styles.upcoming}>
@@ -43,6 +44,7 @@ const Upcoming = ()=>{
                 </span>
             
             </div>
+            <Tips/>
 
 
         
@@ -73,12 +75,14 @@ Quik Assistant is just making apps we build make sense to the
 users who use them.</p> */}
             </div>
             <div>
+                
             <Quiksessionent/>
             <Quiksessionbussiness/>
             <QuikEngineer/>
             <Stickman/>
             <Quikdollars/>
             <Quikcarry/>
+            
 
             </div>
         </div>
