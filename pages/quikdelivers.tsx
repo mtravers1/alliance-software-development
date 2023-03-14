@@ -49,7 +49,7 @@ customers and give you an edge over competitors.
 
                 <span className="flex flex-row-reverse">
                     <span>
-                        <Image src={Tip} height={200} width={700} alt="logo"/>
+                        <Image src={qd1} height={200} width={700} alt="logo"/>
                     </span>
                     <span>
                     <h1 className=" font-bold">Quik Delivers </h1>
@@ -89,7 +89,7 @@ bind up your customers and give you an edge over competitors.
 
                 <span className="flex ">
                     <span className="w-1/3">
-                        <Image src={Tip} height={200} width={700} alt="logo"/>
+                        <Image src={qd1} height={200} width={700} alt="logo"/>
                     </span>
                     <span className="w-1/3">
                     <h1 className="text-center font-bold mb-20">Quik Delivers for Business</h1>
@@ -109,7 +109,7 @@ and give you an edge over competitors.
                 
                 </span>
                 <span className="flex ">
-                        <Image src={Tip} height={200} width={500} alt="logo"/>
+                        <Image src={qd1} height={200} width={500} alt="logo"/>
                       
 
                     </span>
