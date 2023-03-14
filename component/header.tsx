@@ -5,7 +5,6 @@ import data from '../data/db.json'
 import { useState,useEffect } from "react";
 import { useRouter } from 'next/router'
 
-
 interface header{
   nav1:string
   nav2:string
@@ -59,16 +58,16 @@ const [nav, setNav]=useState(data.nav)
         <span className="flex justify-between" style={{fontSize:h.size, color:h.color, fontFamily:h.ffamily}}>
             <select name="apps" id="Apps" onChange={quik}>
               
-           
+
               <option value="quik">
               {/* {h.nav1} */}
               Apps
                 </option>
-                <option onClick={quik}>
+                <option value="quiksession">
                   
                  QuikSession
                 </option>
-                <option>
+                <option >
                   Quik Delivers
                 </option>
                 <option>
@@ -80,8 +79,10 @@ const [nav, setNav]=useState(data.nav)
                 <option>
                   Quik Carry
                 </option>
+                
 
                 </select>
+                <Link href="/quikdelivers">QuikDelivers</Link>
                 </span>
         
         <span  style={{fontSize:h.size, color:h.color, fontFamily:h.ffamily, marginLeft:25, marginRight:25}}>
