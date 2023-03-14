@@ -6,6 +6,7 @@ import Stickman from "../component/apps/stickman";
 import { Quikdollars, Quikcarry} from "../component/apps/quik";
 import Tip from "../public/tipin.png"
 import Image from "next/image";
+import qd1 from "../public/qd1.png"
 import {Tips} from "../component/apps/tip"
 const Deliver = ()=>{
     return(
@@ -18,7 +19,7 @@ const Deliver = ()=>{
 
                 <span className="flex">
                     <span>
-                        <Image src={Tip} height={200} width={700} alt="logo"/>
+                        <Image src={qd1} height={200} width={700} alt="logo"/>
                     </span>
                     <span>
                     <h1 className=" font-bold">Quik Delivers for Drivers</h1>
