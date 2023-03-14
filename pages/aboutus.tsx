@@ -13,7 +13,7 @@ const Aboutus = ()=>{
 
 
 
-        <div className={styles.about}>
+        <div className={styles.about} style={{width:"fit-content"}}>
         <Header/>
        
         <div>

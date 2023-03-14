@@ -4,6 +4,9 @@ import Link from "next/link";
 import data from '../data/db.json'
 import { useState,useEffect } from "react";
 import { useRouter } from 'next/router'
+import Quiksession from "../pages/quiksession";
+import Quikcurry from "../pages/quikcarry";
+
 
 interface header{
   nav1:string
@@ -45,7 +48,6 @@ const [nav, setNav]=useState(data.nav)
 
   return (
     <div className={styles.head}>
-  
       {nav.map((h:header)=>(
         <>
 
@@ -63,7 +65,7 @@ const [nav, setNav]=useState(data.nav)
               {/* {h.nav1} */}
               Apps
                 </option>
-                <option value="quiksession">
+                <option value="./aboutus">
                   
                  QuikSession
                 </option>
@@ -83,6 +85,16 @@ const [nav, setNav]=useState(data.nav)
 
                 </select>
                 <Link href="/quikdelivers">QuikDelivers</Link>
+                <Link href="/quiksession">QuikSession</Link>
+                <Link href="/quikcarry">QuikCarry</Link>
+                <Link href="/quikdollars">QuikDollars</Link>
+                <Link href="/stickmanvip">stickmanVIP</Link>
+
+
+
+                
+
+
                 </span>
         
         <span  style={{fontSize:h.size, color:h.color, fontFamily:h.ffamily, marginLeft:25, marginRight:25}}>
