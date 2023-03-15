@@ -54,10 +54,10 @@ export function Quiksessionent (){
                     
                     </ul>
                     </span>
-                    <span className="flex justify-between">
-                    <Image  alt="logo1" src={ent1} height={200} width={300}/>
-                    <Image  alt="logo2" src={ent2} height={200} width={300}/>
-                    <Image  alt="logo3" src={ent3} height={200} width={300}/>
+                    <span className="flex flex-wrap justify-between">
+                    <Image  alt="logo1" src={ent1} height={200} width={250}/>
+                    <Image  alt="logo2" src={ent2} height={200} width={250}/>
+                    <Image  alt="logo3" src={ent3} height={200} width={250}/>
 
                     </span>
                     </span>
@@ -146,7 +146,7 @@ export function QuikEngineer (){
                         \an album, using specialized microphones and equipment to realize their artistic vision</p>
                     </span>
                     <span className="flex justify-between">
-                        <span className="flex justify-center mb-24">
+                        <span className="flex flex-wrap justify-center mb-24">
                     <Image   alt="logo1" src={eng} height={200} width={300}/>
                     <Image  alt="logo1" src={eng1} height={200} width={300}/>
 

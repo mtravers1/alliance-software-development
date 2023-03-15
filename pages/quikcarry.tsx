@@ -22,12 +22,12 @@ const Quikcurry= ()=>{
                 <Header />
                 <div className="flex flex-col">
                 
-            <span className="flex ">
+            <span className="align-center items-center flex flex-col ">
 
-                <span className=" w-1/2 flex-wrap items-center">
+                <span className=" flex-wrap items-center border-black border w-3/4 rounded-2xl">
                 <span className="flex ">
                 <Image alt="logo" src={carry} height={200} width={200} />
-                <p className="flex items-center" style={{ alignItems: "center" }}>
+                <p className="flex items-center font-bold text-2xl" style={{ alignItems: "center" }}>
                     QuikCarry<br />
                 </p>
             </span>
@@ -41,22 +41,25 @@ const Quikcurry= ()=>{
                     <p>Quik Carry app is a platform providing online services to its users and ride-hailing companies. Customers can book rides through their smartphones, drivers can get ride requests from<br/> an app or panel, and taxi managing niches can operate the business tasks online.
                     </p>
                     <br/>
-                </span>
-                <span className="top-3.5 flex">
+                
+                <span className="top-3.5 flex justify-around">
                 <Image alt="logo" src={qcman} height={300} width={400} />
                 <Image alt="logo" src={qc1} height={200} width={700} />
 
                 </span>
+                </span>
             </span>
-        </div><div className="">
-                <span className="flex ">
+        </div><div className="flex flex-col justify-center align-center border-black mt-24">
+                <div className="border-black border w-3/4 rounded-2xl ">
+                <span className="align-center items-center flex flex-col  ">
+
                     <Image alt="logo" src={driver} height={200} width={200} />
-                    <p className="flex items-center" style={{ alignItems: "center" }}>
+                    <p className="flex items-center font-bold text-2xl" style={{ alignItems: "center" }}>
                         QuikCarry<br />
                         For Drivers
                     </p>
                 </span>
-                <span className="">
+                <span className="flex">
                     <span className="">
                         <p>
                             Quik Carry for Drivers is aiming to be the best experience for any driver who is doing ridesharing today!!!
@@ -70,7 +73,7 @@ const Quikcurry= ()=>{
 
                         </p>
 
-                    </span>
+                    
                     <span>
                         <span className="flex justify-between">
                         <Image alt="logo" src={qc2} height={200} width={200} />
@@ -79,11 +82,13 @@ const Quikcurry= ()=>{
                         <Image alt="logo" src={qc2} height={200} width={200} />
 
                         </span>
+                        </span>
 
 
 
                     </span>
                 </span>
+                </div>
                 </div>
             </div></>
         
