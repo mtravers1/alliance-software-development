@@ -11,12 +11,12 @@ import idm from "/public/idm.png"
 import idbbus from "/public/idbbus.jpg"
 
 
-
 export function Tips(){
     return(
         <div className="mt-12">
       <div className={styles.quikent}>
-                        <div>
+        
+                        <div  className={styles.tip}>
                 <span className="flex">
                 <Image objectFit="none" alt="logo" src={tipin} height={200} width={200}/>
                 <p className="flex items-center" style={{alignItems:"center"}}>
@@ -63,10 +63,10 @@ export function Tips(){
                     </span>
                     </span>
                 </span>
-            </div>
+            
            
-        </div>
-
+        
+                    <div className="flex">
         <div className={styles.quikent}>
                         <div>
                 <span className="flex">
@@ -186,7 +186,9 @@ And many more features to come….
                     </span>
                 </span>
             </div>
-           
+            </div>
+        </div>
+        </div>
         </div>
         <div className={styles.quikent}>
                         <div>

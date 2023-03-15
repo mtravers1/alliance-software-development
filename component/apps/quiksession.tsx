@@ -73,7 +73,10 @@ export function Quiksessionbussiness (){
         <div className={styles.quikent}>
                         <div>
                 <span className="flex">
-                <Image objectFit="none" alt="logo" src={bus} height={200} width={200}/>
+                    <span className="rounded-3xl">
+                    <Image className="border rounded-3xl" objectFit="none" alt="logo" src={bus} height={190} width={190}/>
+
+                    </span>
                 <p className="flex items-center" style={{alignItems:"center"}}>
                 QuikSession<br/>
                 For Business App
@@ -121,8 +124,11 @@ export function QuikEngineer (){
         <div className={styles.quikent}>
                      <div>
                 <span className="flex">
-                <Image alt="logo" src={qe} height={200} width={200}/>
+                <span className="border rounded-3xl">
+                <Image className="border rounded-3xl" alt="logo" src={qe} height={200} width={200}/>
+                </span>
                 <p className="flex items-center" style={{alignItems:"center"}}>
+               
                 QuikEngineer<br/>
                 QuikSession App for Entertainment
                 </p>
@@ -140,8 +146,8 @@ export function QuikEngineer (){
                         \an album, using specialized microphones and equipment to realize their artistic vision</p>
                     </span>
                     <span className="flex justify-between">
-                        <span className="flex justify-between">
-                    <Image  alt="logo1" src={eng} height={200} width={300}/>
+                        <span className="flex justify-center mb-24">
+                    <Image   alt="logo1" src={eng} height={200} width={300}/>
                     <Image  alt="logo1" src={eng1} height={200} width={300}/>
 
                     </span>

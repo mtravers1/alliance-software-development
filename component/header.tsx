@@ -63,20 +63,20 @@ const [nav, setNav]=useState(data.nav)
           <img className={styles.img} src={`https://file.rendit.io/n/LWKypLKsROHg9A8UFfGE.png`} />
         
         {/* </Link> */}
-        <span>
-          <button className="border border-black "onClick={toggle}>
+        <span className="border border-black w-64">
+          <button className="" onClick={toggle}>
             Apps         
 
           </button>
           {togglenav&&(
-            <div className="flex flex-col border border-black">
+            <span className="relative top-12">
                <Link href="/quikdelivers">QuikDelivers</Link>
                 <Link href="/quiksession">QuikSession</Link>
                 <Link href="/quikcarry">QuikCarry</Link>
                 <Link href="/quikdollars">QuikDollars</Link>
                 <Link href="/stickmanvip">stickmanVIP</Link>
 
-            </div>
+            </span>
           )}
 
         </span>

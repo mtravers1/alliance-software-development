@@ -39,11 +39,11 @@ const Deliver = ()=>{
             <div className="flex">
 
                 <span className="flex">
-                    <span>
+                    <span className="mr-24">
                         <Image src={qddrivers} height={200} width={700} alt="logo"/>
                     </span>
                     <span>
-                    <h1 className=" font-bold">Quik Delivers for Drivers</h1>
+                    <h1 className=" font-bold border-b-black  border-b-2 text-3xl text-right">Quik Delivers for Drivers</h1>
 
                 <p>
                 Quik Delivers is an app constructed to deliver efficient ordering and delivery services to 
@@ -72,8 +72,8 @@ customers and give you an edge over competitors.
                     <span>
                         <Image src={quikdeliver} height={200} width={700} alt="logo"/>
                     </span>
-                    <span>
-                    <h1 className=" font-bold">Quik Delivers </h1>
+                    <span className="mr-24" >
+                    <h1 className=" font-bold border-b-black  border-b-2 text-3xl">Quik Delivers </h1>
 
                 <p>
                 Quik Delivers is an app constructed to deliver efficient ordering and delivery 
@@ -112,8 +112,8 @@ bind up your customers and give you an edge over competitors.
                     <span className="w-1/3">
                         <Image src={qdbusiness} height={200} width={700} alt="logo"/>
                     </span>
-                    <span className="w-1/3">
-                    <h1 className="text-center font-bold mb-20">Quik Delivers for Business</h1>
+                    <span className="w-1/3 p-12">
+                    <h1 className=" font-bold border-b-black  border-b-2 text-3xl text-center">Quik Delivers for Business</h1>
 
                 <p>
                 Quik Delivers is an app constructed to 
