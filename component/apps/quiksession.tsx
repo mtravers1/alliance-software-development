@@ -88,7 +88,7 @@ export function Quiksessionbussiness (){
                     </span>
                     <span className="flex flex-row-reverse justify-between">
                         <span className="flex">
-                    <Image  alt="logo1" src={bus1} height={200} width={300}/>
+                    <Image  alt="logo1" src={bus1} height={200} width={500}/>
                     
                     </span>
                     
@@ -127,7 +127,7 @@ export function QuikEngineer (){
                 QuikSession App for Entertainment
                 </p>
                 </span>
-                <span className="flex">
+                <span className="flex justify-between">
                      <span className="w-1/2"> 
                         <p>
                             Now professional music studion engineers can now provide their services to more than one music studio with ease with QuikEngineer
@@ -139,8 +139,8 @@ export function QuikEngineer (){
                         is on music recording, you may work with artists and performs in the production of a single track or
                         \an album, using specialized microphones and equipment to realize their artistic vision</p>
                     </span>
-                    <span>
-                        <span className="flex ">
+                    <span className="flex justify-between">
+                        <span className="flex justify-between">
                     <Image  alt="logo1" src={eng} height={200} width={300}/>
                     <Image  alt="logo1" src={eng1} height={200} width={300}/>
 

@@ -8,6 +8,27 @@ import Tip from "../public/tipin.png"
 import Image from "next/image";
 import qd1 from "../public/qd1.png"
 import {Tips} from "../component/apps/tip"
+import qddrivers from "../public/qdfordivers.png"
+import qdbusiness from "../public/qdforbusiness.png"
+import qd from "../public/qd1.png"
+import qd2 from "../public/qd2.png"
+import qd3 from "../public/qd3.png"
+import qd4 from "../public/qd4.png"
+import qd5 from "../public/qd5.png"
+import qd6 from "../public/qd6.png"
+import quikdeliver from "../public/quikdelivers.png"
+import deliver from "../public/quikdeliverman.png"
+
+
+
+
+
+
+
+
+
+
+
 const Deliver = ()=>{
     return(
         <div className={styles.upcoming}>
@@ -19,7 +40,7 @@ const Deliver = ()=>{
 
                 <span className="flex">
                     <span>
-                        <Image src={qd1} height={200} width={700} alt="logo"/>
+                        <Image src={qddrivers} height={200} width={700} alt="logo"/>
                     </span>
                     <span>
                     <h1 className=" font-bold">Quik Delivers for Drivers</h1>
@@ -31,9 +52,9 @@ smoothen business operations. It comes with modern features that bind up your
 customers and give you an edge over competitors. 
                 </p>
                 <span className="flex justify-between">
-                        <Image src={Tip} height={200} width={200} alt="logo"/>
-                        <Image src={Tip} height={200} width={200} alt="logo"/>
-                        <Image src={Tip} height={200} width={200} alt="logo"/>
+                        <Image src={qd3} height={200} width={200} alt="logo"/>
+                        <Image src={qd2} height={200} width={200} alt="logo"/>
+                        <Image src={qd4} height={200} width={200} alt="logo"/>
 
                     </span>
                 
@@ -49,7 +70,7 @@ customers and give you an edge over competitors.
 
                 <span className="flex flex-row-reverse">
                     <span>
-                        <Image src={qd1} height={200} width={700} alt="logo"/>
+                        <Image src={quikdeliver} height={200} width={700} alt="logo"/>
                     </span>
                     <span>
                     <h1 className=" font-bold">Quik Delivers </h1>
@@ -67,9 +88,9 @@ bind up your customers and give you an edge over competitors.
                 <p>Check Your Order Status</p>
                 </span>
                 <span className="flex justify-between">
-                        <Image src={Tip} height={200} width={200} alt="logo"/>
-                        <Image src={Tip} height={200} width={200} alt="logo"/>
-                        <Image src={Tip} height={200} width={200} alt="logo"/>
+                        <Image src={qd4} height={200} width={200} alt="logo"/>
+                        <Image src={qd2} height={200} width={200} alt="logo"/>
+                        <Image src={qd3} height={200} width={200} alt="logo"/>
 
                     </span>
                 
@@ -89,7 +110,7 @@ bind up your customers and give you an edge over competitors.
 
                 <span className="flex ">
                     <span className="w-1/3">
-                        <Image src={qd1} height={200} width={700} alt="logo"/>
+                        <Image src={qdbusiness} height={200} width={700} alt="logo"/>
                     </span>
                     <span className="w-1/3">
                     <h1 className="text-center font-bold mb-20">Quik Delivers for Business</h1>
@@ -109,7 +130,7 @@ and give you an edge over competitors.
                 
                 </span>
                 <span className="flex ">
-                        <Image src={qd1} height={200} width={500} alt="logo"/>
+                        <Image src={deliver} height={200} width={500} alt="logo"/>
                       
 
                     </span>
