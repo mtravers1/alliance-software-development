@@ -2,11 +2,10 @@ import React from "react";
 import styles from './header.module.css';
 import Link from "next/link";
 import data from '../data/db.json'
-import { useState,useEffect } from "react";
 import { useRouter } from 'next/router'
 import Quiksession from "../pages/quiksession";
 import Quikcurry from "../pages/quikcarry";
-
+import { useState } from "react";
 
 interface header{
   nav1:string
@@ -23,8 +22,15 @@ interface header{
 
 
 const Header = ({}) => {
+  const [togglenav, setTogglenav] = useState(false);
 
   const router=useRouter()
+
+  
+    const toggle = () => {
+      setTogglenav(!togglenav);
+    };
+  
 
 const [nav, setNav]=useState(data.nav)
 //   const API_URL='http://localhost:8000/nav'
@@ -57,12 +63,29 @@ const [nav, setNav]=useState(data.nav)
           <img className={styles.img} src={`https://file.rendit.io/n/LWKypLKsROHg9A8UFfGE.png`} />
         
         {/* </Link> */}
-        <span className="flex justify-between" style={{fontSize:h.size, color:h.color, fontFamily:h.ffamily}}>
-            <select name="apps" id="Apps" onChange={quik}>
+        <span>
+          <button className="border border-black "onClick={toggle}>
+            Apps         
+
+          </button>
+          {togglenav&&(
+            <div className="flex flex-col border border-black">
+               <Link href="/quikdelivers">QuikDelivers</Link>
+                <Link href="/quiksession">QuikSession</Link>
+                <Link href="/quikcarry">QuikCarry</Link>
+                <Link href="/quikdollars">QuikDollars</Link>
+                <Link href="/stickmanvip">stickmanVIP</Link>
+
+            </div>
+          )}
+
+        </span>
+  
+        {/* <span className="flex justify-between" style={{fontSize:h.size, color:h.color, fontFamily:h.ffamily}}>
+            <select>
               
 
               <option value="quik">
-              {/* {h.nav1} */}
               Apps
                 </option>
                 <option value="./aboutus">
@@ -95,7 +118,7 @@ const [nav, setNav]=useState(data.nav)
                 
 
 
-                </span>
+                </span> */}
         
         <span  style={{fontSize:h.size, color:h.color, fontFamily:h.ffamily, marginLeft:25, marginRight:25}}>
             <select className="border-8" >

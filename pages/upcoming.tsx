@@ -13,8 +13,10 @@ const Upcoming = ()=>{
            <div style={{width:1400}}>
            <Header />
            </div>
+           <h1 className="text-center font-bold">Future Development Project</h1>
+
            
-            <div>
+            {/* <div>
             <h1 className="text-center font-bold">Future Development Project</h1>
 
                 <span className="flex">
@@ -23,7 +25,7 @@ const Upcoming = ()=>{
                     </span>
                     <span>
                 <p>This groundbreaking app now allows Bartenders, Dance Club Security Guards, and Dancers to recieve their tips electronically from patrons. NO MORE ATMs. The inconvenience and security issues of having to go to an ATM when a crowded club are not eliminated with the Tip In App.</p>
-                <ul className="justify-start flex flex-col">
+                <ul className=" flex flex-col">
                     <li>
                         Tip in App
                     </li>
@@ -43,7 +45,7 @@ const Upcoming = ()=>{
                 </span>
                 </span>
             
-            </div>
+            </div> */}
             <Tips/>
 
 

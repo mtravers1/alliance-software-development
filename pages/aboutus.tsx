@@ -13,10 +13,10 @@ const Aboutus = ()=>{
 
 
 
-        <div className={styles.about} style={{width:"fit-content"}}>
+        <div className={styles.about} >
         <Header/>
        
-        <div>
+        <div className="items-center flex">
             <div className={styles.abouthead} style={{marginTop:"100px", marginBottom:"100px"}}>
       <NewGroup className="">
   
@@ -33,9 +33,10 @@ Alliance Software Development is changing the world, changing lives, and hopes t
     </div>
         </div>
         <Story/>
-        <div>
+        <div className="flex justify-center">
+          
         <BackgroundRootRootRoota style={{marginTop:"100px", marginBottom:"100px"}}>
-      <NewGroupa>
+      <NewGroupa style={{display:"flex", justifyContent:"items-center"}}>
         <Text1a>2k</Text1a>
         <Text2a>Web Installed</Text2a>
       </NewGroupa>

@@ -31,7 +31,7 @@ export function Tips(){
                         </p>
                         
                     </span>
-                    <span className="flex flex-row-reverse justify-between">
+                    <span className="flex ">
                         {/* <span className="flex">
                     <Image  alt="logo1" src="" height={200} width={300}/>
                     
@@ -84,7 +84,7 @@ export function Tips(){
                         </p>
                         
                     </span>
-                    <span className="flex flex-row-reverse justify-between">
+                    <span className="flex ">
                         {/* <span className="flex">
                     <Image  alt="logo1" src="" height={200} width={300}/>
                     
@@ -144,7 +144,7 @@ Directly communicate with Patrons, Dancers, and other staff through the app
                         </p>
                         
                     </span>
-                    <span className="flex flex-row-reverse justify-between">
+                    <span className="flex">
                         {/* <span className="flex">
                     <Image  alt="logo1" src="" height={200} width={300}/>
                     
@@ -204,7 +204,7 @@ And many more features to come….
                         </p>
                         
                     </span>
-                    <span className="flex flex-row-reverse justify-between">
+                    <span className="flex">
                         {/* <span className="flex">
                     <Image  alt="logo1" src="" height={200} width={300}/>
                     
@@ -255,7 +255,7 @@ And many more features to come….
                         </p>
                         
                     </span>
-                    <span className="flex flex-row-reverse justify-between">
+                    <span className="flex">
                         {/* <span className="flex">
                     <Image  alt="logo1" src="" height={200} width={300}/>
                     

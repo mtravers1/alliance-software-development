@@ -6,6 +6,9 @@ import carry from "/public/quikcar.png"
 import driver from "public/quikdrivers.png"
 import qc1 from "/public/quikcarry.png"
 import Header from "../component/header";
+import qd from "/public/quikdollars1.jpg"
+import qd2 from "/public/quikdollars2.jpg"
+
 
 const Quikdollars=()=>{
     return(
@@ -36,7 +39,10 @@ const Quikdollars=()=>{
                                         </p>
                         </span>
                     <span>
-                        <span className="flex">
+                        <span className="flex justify-around">
+                        <Image alt="logo" src={qd} height={400} width={400}/>
+                        <Image alt="logo" src={qd2} height={400} width={400}/>
+
 
                     </span>
                     

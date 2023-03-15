@@ -32,12 +32,12 @@ const Stickman = ()=>{
                 Whether you are looking to rent a group of specialized vehicles or a sing model Stickman VIP can fulfill any need.</p>
                 <h1>Stickman VIP allows users to rent ANYTHING!!!</h1></b>
                 <span className="flex">
-                <Image alt="" src={car1} height={200} width={200}/>
-                <Image alt="" src={car2} height={200} width={200}/>
-                <Image alt="" src={car2} height={200} width={200}/>
-                <Image alt="" src={car4} height={200} width={200}/>
-                <Image alt="" src={car5} height={200} width={200}/>
-                <Image alt="" src={car6} height={200} width={200}/>
+                <Image alt="" src={car1} height={300} width={300}/>
+                <Image alt="" src={car2} height={200} width={300}/>
+                <Image alt="" src={car2} height={200} width={300}/>
+                <Image alt="" src={car4} height={200} width={300}/>
+                <Image alt="" src={car5} height={200} width={300}/>
+                <Image alt="" src={car6} height={200} width={300}/>
 
                 </span>
                 <span className="text-center">
