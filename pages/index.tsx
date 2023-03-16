@@ -101,8 +101,8 @@ interface perfectdomain{
                   <div style={{  display:"flex", flexDirection:"column", alignItems:"center"}}>
                   <Top />
                   <Learn/>
-                  <div style={{marginTop:"100px"}}>
-                  <BackgroundRootRootRootRoot style={{marginTop:"50px"}}>
+                  {/* <div style={{marginTop:"100px"}}>
+                  <BackgroundRootRootRootRoot style={{marginTop:"50px"}}> */}
 
                     {/* {perfectdomain.map()(( domain: {
                       description: string
@@ -138,7 +138,7 @@ interface perfectdomain{
                       </>
                     ))} */}
            {/* <NewGroup> */}
-              {perfectdomain.map((p,index:any)=>(
+              {/* {perfectdomain.map((p,index:any)=>(
                 <>
                  <NewGroup  style={{backgroundColor:p.backgroundcolor}} key={index}>
                 <Text1 style={{color:p.titlecolor, fontSize:p.titlesize}} >{p.title}</Text1>
@@ -164,7 +164,7 @@ interface perfectdomain{
             </Container>
                 </>
                
-              ))}
+              ))} */}
               {/* <Text1>Find the perfect domain name</Text1>
               <Paragraph>
                 Enter your select domain name and choose any extension name in the
@@ -187,9 +187,9 @@ interface perfectdomain{
                 </Button1>
               </FlexRow>
             </Container> */}
-          </BackgroundRootRootRootRoot>
-          </div>
-          <Howitworks/>
+          {/* </BackgroundRootRootRootRoot>
+          </div> */}
+          {/* <Howitworks/> */}
           <ValueRootRootRootdir style={{marginTop:"100px"}}>
             <NewGroupdir>
               
@@ -215,18 +215,7 @@ interface perfectdomain{
           </ValueRootRootRootdir>
           {/* <Simpleprocess/> */}
           
-          <ValueRootRootRootsupport>
-            <NewGroupsupport>
-              <Group2support>
-                <Text1support>24/7 Customer Support</Text1support>
-                <Text2support>information</Text2support>
-              </Group2support>
-              <Button1support onClick={() => Button1Function()}>
-                <ActiveButtonsupport>Learn More</ActiveButtonsupport>
-              </Button1support>
-            </NewGroupsupport>
-            <Illustrationsupport />
-          </ValueRootRootRootsupport>
+         =
           <Getstarted/>
           <Footer/>
       
