@@ -130,10 +130,10 @@ export function QuikEngineer (){
         <div className={styles.quikent}>
                      <div className="flex justify-between">
                 
-                <span className="flex justify-between">
+                <span className="flex justify-between w-2/3">
 
                     
-                <span>
+                <span className="">
                 <span className="flex">
                 <span className="rounded-3xl">
                 <Image className="border rounded-3xl" alt="logo" src={qe} height={200} width={200}/>
@@ -146,7 +146,7 @@ export function QuikEngineer (){
                 </span>
                 </span>
                 <span className="w-1/2">
-                        <p className="w-3/4">
+                        <p className="w-2/4">
                             Now professional music studion engineers can now provide their services to more than one music studio with ease with QuikEngineer
                         </p>
                         <br/>
@@ -162,7 +162,7 @@ export function QuikEngineer (){
                     
                 </span>
                 <span className="flex flex-wrap  mb-24">
-                    <Image   alt="logo1" src={eng} height={200} width={400}/>
+                    <Image   alt="logo1" src={eng} height={200} width={500}/>
                     {/* <Image  alt="logo1" src={eng1} height={200} width={600}/> */}
 
                     </span>
