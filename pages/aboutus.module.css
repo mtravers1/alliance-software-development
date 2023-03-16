@@ -24,3 +24,15 @@ line-height: 32px;
   /* justify-content: space-between; */
   align-items: center;
 }
+
+.about{
+  
+  max-width: 1400px;
+}
+
+@media (max-width:500px) {
+  .about{
+    width: fit-content;
+  }
+  
+}

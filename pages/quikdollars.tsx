@@ -14,10 +14,14 @@ const Quikdollars=()=>{
     return(
         <div >
             <Header/>
-            <div className="">
-             <span className="flex">
-                <Image alt="logo" src={dollars} height={200} width={200}/>
-                <p className="flex items-center" style={{alignItems:"center"}}>
+            <div className="flex justify-center  bg-black">
+            <div className="w-3/4 flex justify center flex-col rounded-2xl p-12" style={{background:"black", color:"green"}}>
+             <span className="flex justify-center ">
+                <span className="rounded-3xl">
+                <Image alt="logo" src={dollars} height={200} width={200} className="rounded-2xl"/>
+
+                </span>
+                <p className="flex items-center font-bold text-2xl" style={{alignItems:"center"}}>
                 QuikDollars<br/>
                 QuikSession App for Entertainment
                 </p>
@@ -50,7 +54,7 @@ const Quikdollars=()=>{
                     </span>
                 </span>
             </div>
-           
+            </div>
         </div>
     )
 }

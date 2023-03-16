@@ -190,9 +190,10 @@ And many more features to come….
         </div>
         </div>
         </div>
+                    <div className={styles.beauti}>
         <div className={styles.quikent}>
-                        <div>
-                <span className="flex">
+                        <div className="">
+                <span className="flex justify-end" style={{justifyContent:"end"}}>
                 <Image objectFit="none" alt="logo" src={idm} height={200} width={200}/>
                 <p className="flex items-center" style={{alignItems:"center"}}>
                 I Demand Beauti
@@ -202,7 +203,7 @@ And many more features to come….
                 <span>
                     <span>
                         <p>
-                        Now you can order your hair, makeup, eye lashes, and any other beauty product and receive them within hours not days with I Demand Beauti!!! This is the largest e-commerce marketplace in the world with all your favorite products for you to purchase at your fingertips.
+                        <span className={styles.tan}>Now you can order your hair, makeup, ey</span>e lashes, and any other beauty product and receive them within hours not days with I Demand Beauti!!! This is the largest e-commerce <span className={styles.tan}>marketplace in the world  </span>withall your favorite products for you to purchase at your fingertips.
                         </p>
                         
                     </span>
@@ -212,22 +213,22 @@ And many more features to come….
                     
                     </span>
                      */}
-                    <span className="ml-12">
-                    <h1>Some of the features of the App are:</h1>
+                    <span className="ml-12 font-bold">
+                    <h1><span className={styles.tan}>Some of the features </span>of the App are:</h1>
                     <ul>
                         <li>
-                        All your favorite beauty products in one place
+                        <span className={styles.tan}>All your favorite beaut</span>y products in one place
                        </li>
-                        <li>Delivery of your products you purchase within hours not days
+                        <li><span className={styles.tan}>Delivery of your produc</span>ts you purchase within hours not days
                         </li>
-                        <li>You get to see your order history
+                        <li><span className={styles.tan}>You get</span> to <span className={styles.tan}>see your ord</span>er history
 
 
 
 
                         </li>
                         
-                        <li>Make passive income by joining campaigns to promote the products you have purchased
+                        <li><span className={styles.tan}>Make pa</span>ssive i<span className={styles.tan}>ncome by </span>joining campaigns to promote the products you have purchased
 
                         </li>
                         
@@ -299,6 +300,7 @@ And many more features to come….
                 </span>
             </div>
            
+        </div>
         </div>
         </div>
     )

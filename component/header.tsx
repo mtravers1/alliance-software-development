@@ -69,7 +69,7 @@ const [nav, setNav]=useState(data.nav)
 
           </button>
           {togglenav&&(
-            <span className="relative top-12">
+            <span style={{background:"white", marginBottom:"28px"}}className="absolute top-24 border-black bg-white">
                <Link href="/quikdelivers">QuikDelivers</Link>
                 <Link href="/quiksession">QuikSession</Link>
                 <Link href="/quikcarry">QuikCarry</Link>
