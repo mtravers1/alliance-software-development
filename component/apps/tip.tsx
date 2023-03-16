@@ -214,21 +214,21 @@ And many more features to come….
                     </span>
                      */}
                     <span className="ml-12 font-bold">
-                    <h1><span className={styles.tan}>Some of the features </span>of the App are:</h1>
+                    <h1><span className={styles.tan}>Some of the features of the</span> App are:</h1>
                     <ul>
                         <li>
-                        <span className={styles.tan}>All your favorite beaut</span>y products in one place
+                        <span className={styles.tan}>All your favorite beauty products</span> in one place
                        </li>
-                        <li><span className={styles.tan}>Delivery of your produc</span>ts you purchase within hours not days
+                        <li><span className={styles.tan}>Delivery of your products you </span>purchase within hours not days
                         </li>
-                        <li><span className={styles.tan}>You get</span> to <span className={styles.tan}>see your ord</span>er history
+                        <li><span className={styles.tan}>You get</span> to <span className={styles.tan}>see your order hist</span>ory
 
 
 
 
                         </li>
                         
-                        <li><span className={styles.tan}>Make pa</span>ssive i<span className={styles.tan}>ncome by </span>joining campaigns to promote the products you have purchased
+                        <li><span className={styles.tan}>Make passive </span>i<span className={styles.tan}>ncome by joining </span> campaigns to promote the products you have purchased
 
                         </li>
                         
